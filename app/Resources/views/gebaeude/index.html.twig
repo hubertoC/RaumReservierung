@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Gebaeudes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nummer</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for gebaeude in gebaeudes %}
+            <tr>
+                <td><a href="{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}">{{ gebaeude.id }}</a></td>
+                <td>{{ gebaeude.nummer }}</td>
+                <td>{{ gebaeude.name }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('adminGebaeude_new') }}">Create a new gebaeude</a>
+        </li>
+    </ul>
+{% endblock %}

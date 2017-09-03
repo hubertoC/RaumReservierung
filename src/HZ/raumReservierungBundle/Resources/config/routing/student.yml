@@ -1,0 +1,24 @@
+adminStudent_index:
+    path:     /
+    defaults: { _controller: "HZraumReservierungBundle:Student:index" }
+    methods:  GET
+
+adminStudent_show:
+    path:     /{id}/show
+    defaults: { _controller: "HZraumReservierungBundle:Student:show" }
+    methods:  GET
+
+adminStudent_new:
+    path:     /new
+    defaults: { _controller: "HZraumReservierungBundle:Student:new" }
+    methods:  [GET, POST]
+
+adminStudent_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "HZraumReservierungBundle:Student:edit" }
+    methods:  [GET, POST]
+
+adminStudent_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "HZraumReservierungBundle:Student:delete" }
+    methods:  DELETE
