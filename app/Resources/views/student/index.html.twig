@@ -1,9 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Students list</h1>
 
-    <table>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
         <thead>
             <tr>
                 <th>Id</th>
@@ -37,7 +37,9 @@
 
     <ul>
         <li>
-            <a href="{{ path('adminStudent_new') }}">Create a new student</a>
+          <div class= "cration_artiste">
+
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminStudent_new') }}">Create a new student</a>
         </li>
     </ul>
 {% endblock %}

@@ -1,6 +1,6 @@
 <?php
 
-/* :student:index.html.twig */
+/* student/index.html.twig */
 class __TwigTemplate_4f95d3b5ad3da52b708935f7eba6a28e64ea63c1dd777b3d7461394d7ab1773f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_4f95d3b5ad3da52b708935f7eba6a28e64ea63c1dd777b3d7461394d7ab
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", ":student:index.html.twig", 1);
+        $this->parent = $this->loadTemplate("layoutAdmin.html.twig", "student/index.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -16,39 +16,39 @@ class __TwigTemplate_4f95d3b5ad3da52b708935f7eba6a28e64ea63c1dd777b3d7461394d7ab
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "layoutAdmin.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d39689a40b10eaab0b3ca31179e1480bbbe8bdcde879be003599400cef330218 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d39689a40b10eaab0b3ca31179e1480bbbe8bdcde879be003599400cef330218->enter($__internal_d39689a40b10eaab0b3ca31179e1480bbbe8bdcde879be003599400cef330218_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":student:index.html.twig"));
+        $__internal_eda1b4b5a110b7e1ed60ec555ba9a8ea996f64b7a73786b0cde7ce0f14cb9182 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_eda1b4b5a110b7e1ed60ec555ba9a8ea996f64b7a73786b0cde7ce0f14cb9182->enter($__internal_eda1b4b5a110b7e1ed60ec555ba9a8ea996f64b7a73786b0cde7ce0f14cb9182_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "student/index.html.twig"));
 
-        $__internal_1d6f618518588894d4c67ae0e3bf22acd4358521390d7238b2bc6f0991fbe726 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1d6f618518588894d4c67ae0e3bf22acd4358521390d7238b2bc6f0991fbe726->enter($__internal_1d6f618518588894d4c67ae0e3bf22acd4358521390d7238b2bc6f0991fbe726_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":student:index.html.twig"));
+        $__internal_2e79e5041c24a370fda9313ac8fc5333375d045f7494a3da847b0e4a7639fcf2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2e79e5041c24a370fda9313ac8fc5333375d045f7494a3da847b0e4a7639fcf2->enter($__internal_2e79e5041c24a370fda9313ac8fc5333375d045f7494a3da847b0e4a7639fcf2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "student/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d39689a40b10eaab0b3ca31179e1480bbbe8bdcde879be003599400cef330218->leave($__internal_d39689a40b10eaab0b3ca31179e1480bbbe8bdcde879be003599400cef330218_prof);
+        $__internal_eda1b4b5a110b7e1ed60ec555ba9a8ea996f64b7a73786b0cde7ce0f14cb9182->leave($__internal_eda1b4b5a110b7e1ed60ec555ba9a8ea996f64b7a73786b0cde7ce0f14cb9182_prof);
 
         
-        $__internal_1d6f618518588894d4c67ae0e3bf22acd4358521390d7238b2bc6f0991fbe726->leave($__internal_1d6f618518588894d4c67ae0e3bf22acd4358521390d7238b2bc6f0991fbe726_prof);
+        $__internal_2e79e5041c24a370fda9313ac8fc5333375d045f7494a3da847b0e4a7639fcf2->leave($__internal_2e79e5041c24a370fda9313ac8fc5333375d045f7494a3da847b0e4a7639fcf2_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_479d9bdac6bd25c2c8cfff00ab964ff0b76f56f35769ce0fa4c8476510f2cfbd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_479d9bdac6bd25c2c8cfff00ab964ff0b76f56f35769ce0fa4c8476510f2cfbd->enter($__internal_479d9bdac6bd25c2c8cfff00ab964ff0b76f56f35769ce0fa4c8476510f2cfbd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5b9204bbdefcc59daf283a9147cd7b4f537f0910c18ff4842f9164526e76af5e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_5b9204bbdefcc59daf283a9147cd7b4f537f0910c18ff4842f9164526e76af5e->enter($__internal_5b9204bbdefcc59daf283a9147cd7b4f537f0910c18ff4842f9164526e76af5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_fe0ee53f642aa39a89662ae8b3cc14fb16d3084ce75960bed02d31f0414a5686 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fe0ee53f642aa39a89662ae8b3cc14fb16d3084ce75960bed02d31f0414a5686->enter($__internal_fe0ee53f642aa39a89662ae8b3cc14fb16d3084ce75960bed02d31f0414a5686_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_89b5ad42f12601e18034b7f301e0ef285ee44da5526955f49ad5a8b9575b0a95 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_89b5ad42f12601e18034b7f301e0ef285ee44da5526955f49ad5a8b9575b0a95->enter($__internal_89b5ad42f12601e18034b7f301e0ef285ee44da5526955f49ad5a8b9575b0a95_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Students list</h1>
 
-    <table>
+    <table class=\"mdl-data-table mdl-js-data-table mdl-shadow--2dp\">
         <thead>
             <tr>
                 <th>Id</th>
@@ -112,24 +112,26 @@ class __TwigTemplate_4f95d3b5ad3da52b708935f7eba6a28e64ea63c1dd777b3d7461394d7ab
 
     <ul>
         <li>
-            <a href=\"";
-        // line 40
+          <div class= \"cration_artiste\">
+
+            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
+        // line 42
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminStudent_new");
         echo "\">Create a new student</a>
         </li>
     </ul>
 ";
         
-        $__internal_fe0ee53f642aa39a89662ae8b3cc14fb16d3084ce75960bed02d31f0414a5686->leave($__internal_fe0ee53f642aa39a89662ae8b3cc14fb16d3084ce75960bed02d31f0414a5686_prof);
+        $__internal_89b5ad42f12601e18034b7f301e0ef285ee44da5526955f49ad5a8b9575b0a95->leave($__internal_89b5ad42f12601e18034b7f301e0ef285ee44da5526955f49ad5a8b9575b0a95_prof);
 
         
-        $__internal_479d9bdac6bd25c2c8cfff00ab964ff0b76f56f35769ce0fa4c8476510f2cfbd->leave($__internal_479d9bdac6bd25c2c8cfff00ab964ff0b76f56f35769ce0fa4c8476510f2cfbd_prof);
+        $__internal_5b9204bbdefcc59daf283a9147cd7b4f537f0910c18ff4842f9164526e76af5e->leave($__internal_5b9204bbdefcc59daf283a9147cd7b4f537f0910c18ff4842f9164526e76af5e_prof);
 
     }
 
     public function getTemplateName()
     {
-        return ":student:index.html.twig";
+        return "student/index.html.twig";
     }
 
     public function isTraitable()
@@ -139,7 +141,7 @@ class __TwigTemplate_4f95d3b5ad3da52b708935f7eba6a28e64ea63c1dd777b3d7461394d7ab
 
     public function getDebugInfo()
     {
-        return array (  117 => 40,  110 => 35,  98 => 29,  92 => 26,  85 => 22,  81 => 21,  77 => 20,  71 => 19,  68 => 18,  64 => 17,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  119 => 42,  110 => 35,  98 => 29,  92 => 26,  85 => 22,  81 => 21,  77 => 20,  71 => 19,  68 => 18,  64 => 17,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -152,12 +154,12 @@ class __TwigTemplate_4f95d3b5ad3da52b708935f7eba6a28e64ea63c1dd777b3d7461394d7ab
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'base.html.twig' %}
+        return new Twig_Source("{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Students list</h1>
 
-    <table>
+    <table class=\"mdl-data-table mdl-js-data-table mdl-shadow--2dp\">
         <thead>
             <tr>
                 <th>Id</th>
@@ -191,10 +193,12 @@ class __TwigTemplate_4f95d3b5ad3da52b708935f7eba6a28e64ea63c1dd777b3d7461394d7ab
 
     <ul>
         <li>
-            <a href=\"{{ path('adminStudent_new') }}\">Create a new student</a>
+          <div class= \"cration_artiste\">
+
+            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminStudent_new') }}\">Create a new student</a>
         </li>
     </ul>
 {% endblock %}
-", ":student:index.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/student/index.html.twig");
+", "student/index.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/student/index.html.twig");
     }
 }

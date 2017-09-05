@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Reservierungs list</h1>
 
-    <table>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
         <thead>
             <tr>
                 <th>Id</th>
@@ -18,6 +18,7 @@
                 <td><a href="{{ path('adminReservierung_show', { 'id': reservierung.id }) }}">{{ reservierung.id }}</a></td>
                 <td>{% if reservierung.startDatum %}{{ reservierung.startDatum|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if reservierung.endDatum %}{{ reservierung.endDatum|date('Y-m-d H:i:s') }}{% endif %}</td>
+
                 <td>
                     <ul>
                         <li>
@@ -34,8 +35,9 @@
     </table>
 
     <ul>
-        <li>
-            <a href="{{ path('adminReservierung_new') }}">Create a new reservierung</a>
+        <div class= "cration_artiste">
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminReservierung_new') }}" ><i class="glyphicon glyphicon-plus"></i>Neue Reservierung erfassen</a>
+</div>
         </li>
     </ul>
 {% endblock %}

@@ -1,9 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Reservierung</h1>
-
-    <table>
+    <div class="conte_show">
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -20,17 +20,33 @@
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('adminReservierung_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('adminReservierung_edit', { 'id': reservierung.id }) }}">Edit</a>
-        </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+
+              <div class="show_suprimer">
+
+                <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Delete">
+              </div>
+
             {{ form_end(delete_form) }}
         </li>
+    <ul>
+      <li>
+        <div class="show_modifier">
+
+          <a class="mdl-button mdl-js-button mdl-button--raised " href="{{ path('adminReservierung_edit', { 'id': reservierung.id }) }}">Edit<i class="glyphicon glyphicon-pencil"></i></a>
+      </li>
+    </div>
+  </ul>
+  <ul>
+    <div class="show_retour">
+
+        <li>
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminReservierung_index') }}">Back to the list</a>
+        </li>
+
+
     </ul>
+  </div>
+
 {% endblock %}
