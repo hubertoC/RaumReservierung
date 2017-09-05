@@ -13,9 +13,11 @@ class GebaeudeType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nummer')->add('name');
+        $builder->add('nummer')
+                ->add('name')
+                ->add('image', ImageType::class);
     }
-    
+
     /**
      * {@inheritdoc}
      */

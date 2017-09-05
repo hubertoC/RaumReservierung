@@ -36,6 +36,13 @@ class Gebaeude
     private $name;
 
     /**
+     * @ORM\OneToOne(targetEntity="HZ\raumReservierungBundle\Entity\Image", cascade={"persist","remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+     private $image;
+
+
+    /**
      * @ORM\OneToMany(targetEntity="Raum", mappedBy="gebaeude")
      */
     protected $raum;
@@ -137,5 +144,24 @@ class Gebaeude
     {
         return $this->raum;
     }
+
+
+    public function setImage(\HZ\raumReservierungBundle\Entity\Image $image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \HZ\raumReservierungBundle\Entity\Image
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
 
 }

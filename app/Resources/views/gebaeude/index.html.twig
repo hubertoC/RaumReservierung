@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Profile</th>
                 <th>Nummer</th>
                 <th>Name</th>
                 <th>Actions</th>
@@ -16,15 +17,16 @@
         {% for gebaeude in gebaeudes %}
             <tr>
                 <td><a href="{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}">{{ gebaeude.id }}</a></td>
+                <td><img src="{{ asset(gebaeude.image.webPath)}}" height="52" width="52" ></td>
                 <td>{{ gebaeude.nummer }}</td>
                 <td>{{ gebaeude.name }}</td>
                 <td>
                     <ul>
                         <li>
-                            <a href="{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}">show</a>
+                            <a href="{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}"><i class="glyphicon glyphicon-info-sign"></i></a>
                         </li>
                         <li>
-                            <a href="{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}">edit</a>
+                            <a href="{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}"><i class="glyphicon glyphicon-pencil"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -37,7 +39,7 @@
         <li>
           <div class= "cration_artiste">
 
-            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminGebaeude_new') }}">Create a new gebaeude</a>
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminGebaeude_new') }}">Create a new gebaeude<i class="glyphicon glyphicon-plus"></i></a>
         </li>
     </ul>
 {% endblock %}

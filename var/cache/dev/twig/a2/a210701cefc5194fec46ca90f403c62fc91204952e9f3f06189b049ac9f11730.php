@@ -21,29 +21,29 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_650701daef9d7fd238248ca82a8edebae151aaf728a718cf9ef7318ffda0ce42 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_650701daef9d7fd238248ca82a8edebae151aaf728a718cf9ef7318ffda0ce42->enter($__internal_650701daef9d7fd238248ca82a8edebae151aaf728a718cf9ef7318ffda0ce42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "raum/index.html.twig"));
+        $__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9->enter($__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "raum/index.html.twig"));
 
-        $__internal_b9c1b05b8e5d8242b6d4abe3d84e23463742e69603e3eca88de39f55c29008a6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b9c1b05b8e5d8242b6d4abe3d84e23463742e69603e3eca88de39f55c29008a6->enter($__internal_b9c1b05b8e5d8242b6d4abe3d84e23463742e69603e3eca88de39f55c29008a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "raum/index.html.twig"));
+        $__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f->enter($__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "raum/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_650701daef9d7fd238248ca82a8edebae151aaf728a718cf9ef7318ffda0ce42->leave($__internal_650701daef9d7fd238248ca82a8edebae151aaf728a718cf9ef7318ffda0ce42_prof);
+        $__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9->leave($__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9_prof);
 
         
-        $__internal_b9c1b05b8e5d8242b6d4abe3d84e23463742e69603e3eca88de39f55c29008a6->leave($__internal_b9c1b05b8e5d8242b6d4abe3d84e23463742e69603e3eca88de39f55c29008a6_prof);
+        $__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f->leave($__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_01ca1ba5dc130073a1aae42fa5edcb0260fd3094d76a5aafb1005d4a1ec86342 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_01ca1ba5dc130073a1aae42fa5edcb0260fd3094d76a5aafb1005d4a1ec86342->enter($__internal_01ca1ba5dc130073a1aae42fa5edcb0260fd3094d76a5aafb1005d4a1ec86342_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea->enter($__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_33825b3bf9feb5854638be606aa60433314e0bec7c98d55a70475f11a8445a20 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_33825b3bf9feb5854638be606aa60433314e0bec7c98d55a70475f11a8445a20->enter($__internal_33825b3bf9feb5854638be606aa60433314e0bec7c98d55a70475f11a8445a20_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc->enter($__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Raums list</h1>
@@ -52,6 +52,7 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Profile</th>
                 <th>Nummer</th>
                 <th>Name</th>
                 <th>Actions</th>
@@ -59,39 +60,43 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         </thead>
         <tbody>
         ";
-        // line 16
+        // line 17
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["raums"]) ? $context["raums"] : $this->getContext($context, "raums")));
         foreach ($context['_seq'] as $context["_key"] => $context["raum"]) {
-            // line 17
+            // line 18
             echo "            <tr>
                 <td><a href=\"";
-            // line 18
+            // line 19
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminRaum_show", array("id" => $this->getAttribute($context["raum"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["raum"], "id", array()), "html", null, true);
             echo "</a></td>
+                <td><img src=\"";
+            // line 20
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl($this->getAttribute($this->getAttribute($context["raum"], "image", array()), "webPath", array())), "html", null, true);
+            echo "\" height=\"52\" width=\"52\" ></td>
                 <td>";
-            // line 19
+            // line 21
             echo twig_escape_filter($this->env, $this->getAttribute($context["raum"], "nummer", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 20
+            // line 22
             echo twig_escape_filter($this->env, $this->getAttribute($context["raum"], "name", array()), "html", null, true);
             echo "</td>
                 <td>
                     <ul>
                         <li>
                             <a href=\"";
-            // line 24
+            // line 26
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminRaum_show", array("id" => $this->getAttribute($context["raum"], "id", array()))), "html", null, true);
-            echo "\">show</a>
+            echo "\"><i class=\"glyphicon glyphicon-info-sign\"></i></a>
                         </li>
                         <li>
                             <a href=\"";
-            // line 27
+            // line 29
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminRaum_edit", array("id" => $this->getAttribute($context["raum"], "id", array()))), "html", null, true);
-            echo "\">edit</a>
+            echo "\"><i class=\"glyphicon glyphicon-pencil\"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -101,7 +106,7 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['raum'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 35
         echo "        </tbody>
     </table>
 
@@ -110,18 +115,18 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
           <div class= \"cration_artiste\">
 
             <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
-        // line 40
+        // line 42
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminRaum_new");
-        echo "\">Create a new raum</a>
+        echo "\">Create a new raum<i class=\"glyphicon glyphicon-plus\"></i></a>
           </div>
 </li>
     </ul>
 ";
         
-        $__internal_33825b3bf9feb5854638be606aa60433314e0bec7c98d55a70475f11a8445a20->leave($__internal_33825b3bf9feb5854638be606aa60433314e0bec7c98d55a70475f11a8445a20_prof);
+        $__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc->leave($__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc_prof);
 
         
-        $__internal_01ca1ba5dc130073a1aae42fa5edcb0260fd3094d76a5aafb1005d4a1ec86342->leave($__internal_01ca1ba5dc130073a1aae42fa5edcb0260fd3094d76a5aafb1005d4a1ec86342_prof);
+        $__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea->leave($__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea_prof);
 
     }
 
@@ -137,7 +142,7 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
 
     public function getDebugInfo()
     {
-        return array (  114 => 40,  105 => 33,  93 => 27,  87 => 24,  80 => 20,  76 => 19,  70 => 18,  67 => 17,  63 => 16,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  119 => 42,  110 => 35,  98 => 29,  92 => 26,  85 => 22,  81 => 21,  77 => 20,  71 => 19,  68 => 18,  64 => 17,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -159,6 +164,7 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Profile</th>
                 <th>Nummer</th>
                 <th>Name</th>
                 <th>Actions</th>
@@ -168,15 +174,16 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         {% for raum in raums %}
             <tr>
                 <td><a href=\"{{ path('adminRaum_show', { 'id': raum.id }) }}\">{{ raum.id }}</a></td>
+                <td><img src=\"{{ asset(raum.image.webPath)}}\" height=\"52\" width=\"52\" ></td>
                 <td>{{ raum.nummer }}</td>
                 <td>{{ raum.name }}</td>
                 <td>
                     <ul>
                         <li>
-                            <a href=\"{{ path('adminRaum_show', { 'id': raum.id }) }}\">show</a>
+                            <a href=\"{{ path('adminRaum_show', { 'id': raum.id }) }}\"><i class=\"glyphicon glyphicon-info-sign\"></i></a>
                         </li>
                         <li>
-                            <a href=\"{{ path('adminRaum_edit', { 'id': raum.id }) }}\">edit</a>
+                            <a href=\"{{ path('adminRaum_edit', { 'id': raum.id }) }}\"><i class=\"glyphicon glyphicon-pencil\"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -189,7 +196,7 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         <li>
           <div class= \"cration_artiste\">
 
-            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminRaum_new') }}\">Create a new raum</a>
+            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminRaum_new') }}\">Create a new raum<i class=\"glyphicon glyphicon-plus\"></i></a>
           </div>
 </li>
     </ul>

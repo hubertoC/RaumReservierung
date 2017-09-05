@@ -21,29 +21,29 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6e52d436415ab52afc7997ad3c9d8b08bdef0f07d50f6259df6102fd8f8df773 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6e52d436415ab52afc7997ad3c9d8b08bdef0f07d50f6259df6102fd8f8df773->enter($__internal_6e52d436415ab52afc7997ad3c9d8b08bdef0f07d50f6259df6102fd8f8df773_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gebaeude/index.html.twig"));
+        $__internal_df2bfbfb9bc1bb95dc63190a9f57fdefc66cc90da5caac07ea7f8029ddc488df = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_df2bfbfb9bc1bb95dc63190a9f57fdefc66cc90da5caac07ea7f8029ddc488df->enter($__internal_df2bfbfb9bc1bb95dc63190a9f57fdefc66cc90da5caac07ea7f8029ddc488df_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gebaeude/index.html.twig"));
 
-        $__internal_7752d3a5b5f856ee885e548d439fde82371b1193a029b368306b25e1445a7f62 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7752d3a5b5f856ee885e548d439fde82371b1193a029b368306b25e1445a7f62->enter($__internal_7752d3a5b5f856ee885e548d439fde82371b1193a029b368306b25e1445a7f62_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gebaeude/index.html.twig"));
+        $__internal_7d7f1d4785039e012a2bd34b9b7e7b67667b38a5a4c76959cd7dd6ccc74b44a9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7d7f1d4785039e012a2bd34b9b7e7b67667b38a5a4c76959cd7dd6ccc74b44a9->enter($__internal_7d7f1d4785039e012a2bd34b9b7e7b67667b38a5a4c76959cd7dd6ccc74b44a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gebaeude/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6e52d436415ab52afc7997ad3c9d8b08bdef0f07d50f6259df6102fd8f8df773->leave($__internal_6e52d436415ab52afc7997ad3c9d8b08bdef0f07d50f6259df6102fd8f8df773_prof);
+        $__internal_df2bfbfb9bc1bb95dc63190a9f57fdefc66cc90da5caac07ea7f8029ddc488df->leave($__internal_df2bfbfb9bc1bb95dc63190a9f57fdefc66cc90da5caac07ea7f8029ddc488df_prof);
 
         
-        $__internal_7752d3a5b5f856ee885e548d439fde82371b1193a029b368306b25e1445a7f62->leave($__internal_7752d3a5b5f856ee885e548d439fde82371b1193a029b368306b25e1445a7f62_prof);
+        $__internal_7d7f1d4785039e012a2bd34b9b7e7b67667b38a5a4c76959cd7dd6ccc74b44a9->leave($__internal_7d7f1d4785039e012a2bd34b9b7e7b67667b38a5a4c76959cd7dd6ccc74b44a9_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d3e3096599868838fb27e64363057d0fb7cd0ba33f8e4b9140151e70861ee60e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d3e3096599868838fb27e64363057d0fb7cd0ba33f8e4b9140151e70861ee60e->enter($__internal_d3e3096599868838fb27e64363057d0fb7cd0ba33f8e4b9140151e70861ee60e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_2b1d11409acb1dd51c25719ab0401cb040472f270f677d87727972f7996094af = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2b1d11409acb1dd51c25719ab0401cb040472f270f677d87727972f7996094af->enter($__internal_2b1d11409acb1dd51c25719ab0401cb040472f270f677d87727972f7996094af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_dabe15ed014e9162b553c22ebab073096345fa547a481c5e149c6e93f78da3c0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dabe15ed014e9162b553c22ebab073096345fa547a481c5e149c6e93f78da3c0->enter($__internal_dabe15ed014e9162b553c22ebab073096345fa547a481c5e149c6e93f78da3c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8d607a9feff8144b06e64e8df125c60fe718808b2c7507cb2dd3c0241f39e4d6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8d607a9feff8144b06e64e8df125c60fe718808b2c7507cb2dd3c0241f39e4d6->enter($__internal_8d607a9feff8144b06e64e8df125c60fe718808b2c7507cb2dd3c0241f39e4d6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Gebaeudes list</h1>
@@ -52,6 +52,7 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Profile</th>
                 <th>Nummer</th>
                 <th>Name</th>
                 <th>Actions</th>
@@ -59,39 +60,43 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
         </thead>
         <tbody>
         ";
-        // line 16
+        // line 17
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["gebaeudes"]) ? $context["gebaeudes"] : $this->getContext($context, "gebaeudes")));
         foreach ($context['_seq'] as $context["_key"] => $context["gebaeude"]) {
-            // line 17
+            // line 18
             echo "            <tr>
                 <td><a href=\"";
-            // line 18
+            // line 19
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_show", array("id" => $this->getAttribute($context["gebaeude"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["gebaeude"], "id", array()), "html", null, true);
             echo "</a></td>
+                <td><img src=\"";
+            // line 20
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl($this->getAttribute($this->getAttribute($context["gebaeude"], "image", array()), "webPath", array())), "html", null, true);
+            echo "\" height=\"52\" width=\"52\" ></td>
                 <td>";
-            // line 19
+            // line 21
             echo twig_escape_filter($this->env, $this->getAttribute($context["gebaeude"], "nummer", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 20
+            // line 22
             echo twig_escape_filter($this->env, $this->getAttribute($context["gebaeude"], "name", array()), "html", null, true);
             echo "</td>
                 <td>
                     <ul>
                         <li>
                             <a href=\"";
-            // line 24
+            // line 26
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_show", array("id" => $this->getAttribute($context["gebaeude"], "id", array()))), "html", null, true);
-            echo "\">show</a>
+            echo "\"><i class=\"glyphicon glyphicon-info-sign\"></i></a>
                         </li>
                         <li>
                             <a href=\"";
-            // line 27
+            // line 29
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_edit", array("id" => $this->getAttribute($context["gebaeude"], "id", array()))), "html", null, true);
-            echo "\">edit</a>
+            echo "\"><i class=\"glyphicon glyphicon-pencil\"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -101,7 +106,7 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['gebaeude'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 35
         echo "        </tbody>
     </table>
 
@@ -110,17 +115,17 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
           <div class= \"cration_artiste\">
 
             <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
-        // line 40
+        // line 42
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_new");
-        echo "\">Create a new gebaeude</a>
+        echo "\">Create a new gebaeude<i class=\"glyphicon glyphicon-plus\"></i></a>
         </li>
     </ul>
 ";
         
-        $__internal_dabe15ed014e9162b553c22ebab073096345fa547a481c5e149c6e93f78da3c0->leave($__internal_dabe15ed014e9162b553c22ebab073096345fa547a481c5e149c6e93f78da3c0_prof);
+        $__internal_8d607a9feff8144b06e64e8df125c60fe718808b2c7507cb2dd3c0241f39e4d6->leave($__internal_8d607a9feff8144b06e64e8df125c60fe718808b2c7507cb2dd3c0241f39e4d6_prof);
 
         
-        $__internal_d3e3096599868838fb27e64363057d0fb7cd0ba33f8e4b9140151e70861ee60e->leave($__internal_d3e3096599868838fb27e64363057d0fb7cd0ba33f8e4b9140151e70861ee60e_prof);
+        $__internal_2b1d11409acb1dd51c25719ab0401cb040472f270f677d87727972f7996094af->leave($__internal_2b1d11409acb1dd51c25719ab0401cb040472f270f677d87727972f7996094af_prof);
 
     }
 
@@ -136,7 +141,7 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
 
     public function getDebugInfo()
     {
-        return array (  114 => 40,  105 => 33,  93 => 27,  87 => 24,  80 => 20,  76 => 19,  70 => 18,  67 => 17,  63 => 16,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  119 => 42,  110 => 35,  98 => 29,  92 => 26,  85 => 22,  81 => 21,  77 => 20,  71 => 19,  68 => 18,  64 => 17,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -158,6 +163,7 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Profile</th>
                 <th>Nummer</th>
                 <th>Name</th>
                 <th>Actions</th>
@@ -167,15 +173,16 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
         {% for gebaeude in gebaeudes %}
             <tr>
                 <td><a href=\"{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}\">{{ gebaeude.id }}</a></td>
+                <td><img src=\"{{ asset(gebaeude.image.webPath)}}\" height=\"52\" width=\"52\" ></td>
                 <td>{{ gebaeude.nummer }}</td>
                 <td>{{ gebaeude.name }}</td>
                 <td>
                     <ul>
                         <li>
-                            <a href=\"{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}\">show</a>
+                            <a href=\"{{ path('adminGebaeude_show', { 'id': gebaeude.id }) }}\"><i class=\"glyphicon glyphicon-info-sign\"></i></a>
                         </li>
                         <li>
-                            <a href=\"{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}\">edit</a>
+                            <a href=\"{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}\"><i class=\"glyphicon glyphicon-pencil\"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -188,7 +195,7 @@ class __TwigTemplate_1d3d1e8769a2c6d05fe168bcbb8820f166957293553d075d7bc392439a7
         <li>
           <div class= \"cration_artiste\">
 
-            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminGebaeude_new') }}\">Create a new gebaeude</a>
+            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminGebaeude_new') }}\">Create a new gebaeude<i class=\"glyphicon glyphicon-plus\"></i></a>
         </li>
     </ul>
 {% endblock %}

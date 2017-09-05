@@ -14,7 +14,10 @@ class RaumType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nummer')->add('name')->add('gebaeude',EntityType::class, array(
+        $builder->add('nummer')
+                ->add('name')
+                ->add('image', ImageType::class)
+                ->add('gebaeude',EntityType::class, array(
                                                                 'class' => 'HZraumReservierungBundle:Gebaeude',
                                                                 'choice_label' => 'name',
                                                                 'multiple'=>false
