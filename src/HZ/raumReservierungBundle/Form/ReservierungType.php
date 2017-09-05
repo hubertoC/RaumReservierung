@@ -14,15 +14,22 @@ class ReservierungType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('startDatum')->add('endDatum')->add('dozent',EntityType::class, array(
+        $builder->add('startDatum')
+                ->add('endDatum')
+                ->add('dozent',EntityType::class, array(
                                                                 'class' => 'HZraumReservierungBundle:Dozent',
                                                                 'choice_label' => 'name',
-                                                                'multiple'=>false
+                                                                'multiple'=>false,
+                                                                'required' => false
+
                                                               )
-                          )->add('student',EntityType::class, array(
+                          )
+                          ->add('student',EntityType::class, array(
                                                                 'class' => 'HZraumReservierungBundle:Student',
                                                                 'choice_label' => 'name',
-                                                                'multiple'=>false
+                                                                'multiple'=>false,
+                                                                'required' => false
+
                                                               )
                           )->add('raum',EntityType::class, array(
                                                                 'class' => 'HZraumReservierungBundle:Raum',

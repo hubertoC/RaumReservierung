@@ -64,10 +64,10 @@ class Raum extends \HZ\raumReservierungBundle\Entity\Raum implements \Doctrine\O
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', 'reservierung', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude'];
+            return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'image', 'reservierung', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', 'reservierung', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude'];
+        return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'image', 'reservierung', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude'];
     }
 
     /**
@@ -285,6 +285,28 @@ class Raum extends \HZ\raumReservierungBundle\Entity\Raum implements \Doctrine\O
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReservierung', []);
 
         return parent::getReservierung();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setImage(\HZ\raumReservierungBundle\Entity\Image $image)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setImage', [$image]);
+
+        return parent::setImage($image);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage', []);
+
+        return parent::getImage();
     }
 
 }

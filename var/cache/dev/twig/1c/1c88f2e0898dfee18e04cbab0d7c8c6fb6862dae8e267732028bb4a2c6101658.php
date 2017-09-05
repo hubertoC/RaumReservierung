@@ -21,29 +21,29 @@ class __TwigTemplate_ea16a81424a9dfd25c764385b614c3d5ac85ac5a5b5d8680e35d752fc2a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_15ae9ce9ad5f723b9d2cc7f7ad4b78d283dbb26a4a1b8c2627a036c51d691048 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_15ae9ce9ad5f723b9d2cc7f7ad4b78d283dbb26a4a1b8c2627a036c51d691048->enter($__internal_15ae9ce9ad5f723b9d2cc7f7ad4b78d283dbb26a4a1b8c2627a036c51d691048_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservierung/index.html.twig"));
+        $__internal_423a4fbb863db5af70cb44c2d3656b204e8c5b2800d4da488dd365d6014716a3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_423a4fbb863db5af70cb44c2d3656b204e8c5b2800d4da488dd365d6014716a3->enter($__internal_423a4fbb863db5af70cb44c2d3656b204e8c5b2800d4da488dd365d6014716a3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservierung/index.html.twig"));
 
-        $__internal_144cb63f9dcf833477153f990485687c559eddbc13aa06ca314282335b0fb6ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_144cb63f9dcf833477153f990485687c559eddbc13aa06ca314282335b0fb6ef->enter($__internal_144cb63f9dcf833477153f990485687c559eddbc13aa06ca314282335b0fb6ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservierung/index.html.twig"));
+        $__internal_2821be6b8af3c6e234be4d4c5fd19e4b5645e4c52c7bfd0dbc830ef4eadebd10 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2821be6b8af3c6e234be4d4c5fd19e4b5645e4c52c7bfd0dbc830ef4eadebd10->enter($__internal_2821be6b8af3c6e234be4d4c5fd19e4b5645e4c52c7bfd0dbc830ef4eadebd10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservierung/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_15ae9ce9ad5f723b9d2cc7f7ad4b78d283dbb26a4a1b8c2627a036c51d691048->leave($__internal_15ae9ce9ad5f723b9d2cc7f7ad4b78d283dbb26a4a1b8c2627a036c51d691048_prof);
+        $__internal_423a4fbb863db5af70cb44c2d3656b204e8c5b2800d4da488dd365d6014716a3->leave($__internal_423a4fbb863db5af70cb44c2d3656b204e8c5b2800d4da488dd365d6014716a3_prof);
 
         
-        $__internal_144cb63f9dcf833477153f990485687c559eddbc13aa06ca314282335b0fb6ef->leave($__internal_144cb63f9dcf833477153f990485687c559eddbc13aa06ca314282335b0fb6ef_prof);
+        $__internal_2821be6b8af3c6e234be4d4c5fd19e4b5645e4c52c7bfd0dbc830ef4eadebd10->leave($__internal_2821be6b8af3c6e234be4d4c5fd19e4b5645e4c52c7bfd0dbc830ef4eadebd10_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_31bfb065824c15295c1f3e83d4b6413e2dd6b85c459b81c9bd5f11a537652f99 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_31bfb065824c15295c1f3e83d4b6413e2dd6b85c459b81c9bd5f11a537652f99->enter($__internal_31bfb065824c15295c1f3e83d4b6413e2dd6b85c459b81c9bd5f11a537652f99_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_a00b461328540471acf3e1e7a76e6e8a3ea1f5e2391971cf84598dd64a3370d9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a00b461328540471acf3e1e7a76e6e8a3ea1f5e2391971cf84598dd64a3370d9->enter($__internal_a00b461328540471acf3e1e7a76e6e8a3ea1f5e2391971cf84598dd64a3370d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_0713dafa915c79002e3f6a98fd53cbac0228a0248203fa4642357481587e9cea = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0713dafa915c79002e3f6a98fd53cbac0228a0248203fa4642357481587e9cea->enter($__internal_0713dafa915c79002e3f6a98fd53cbac0228a0248203fa4642357481587e9cea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_b94499761636be689b24e9e1a73c47dd2e88d9ffa41a599145c4aaa1e027ccc4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b94499761636be689b24e9e1a73c47dd2e88d9ffa41a599145c4aaa1e027ccc4->enter($__internal_b94499761636be689b24e9e1a73c47dd2e88d9ffa41a599145c4aaa1e027ccc4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Reservierungs list</h1>
@@ -90,13 +90,13 @@ class __TwigTemplate_ea16a81424a9dfd25c764385b614c3d5ac85ac5a5b5d8680e35d752fc2a
                             <a href=\"";
             // line 25
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminReservierung_show", array("id" => $this->getAttribute($context["reservierung"], "id", array()))), "html", null, true);
-            echo "\">show</a>
+            echo "\"><i class=\"glyphicon glyphicon-info-sign\"></i></a>
                         </li>
                         <li>
                             <a href=\"";
             // line 28
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminReservierung_edit", array("id" => $this->getAttribute($context["reservierung"], "id", array()))), "html", null, true);
-            echo "\">edit</a>
+            echo "\"><i class=\"glyphicon glyphicon-pencil\"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -115,16 +115,16 @@ class __TwigTemplate_ea16a81424a9dfd25c764385b614c3d5ac85ac5a5b5d8680e35d752fc2a
             <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
         // line 39
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminReservierung_new");
-        echo "\" ><i class=\"glyphicon glyphicon-plus\"></i>Neue Reservierung erfassen</a>
+        echo "\" >Neue Reservierung erfassen<i class=\"glyphicon glyphicon-plus\"></i></a>
 </div>
         </li>
     </ul>
 ";
         
-        $__internal_0713dafa915c79002e3f6a98fd53cbac0228a0248203fa4642357481587e9cea->leave($__internal_0713dafa915c79002e3f6a98fd53cbac0228a0248203fa4642357481587e9cea_prof);
+        $__internal_b94499761636be689b24e9e1a73c47dd2e88d9ffa41a599145c4aaa1e027ccc4->leave($__internal_b94499761636be689b24e9e1a73c47dd2e88d9ffa41a599145c4aaa1e027ccc4_prof);
 
         
-        $__internal_31bfb065824c15295c1f3e83d4b6413e2dd6b85c459b81c9bd5f11a537652f99->leave($__internal_31bfb065824c15295c1f3e83d4b6413e2dd6b85c459b81c9bd5f11a537652f99_prof);
+        $__internal_a00b461328540471acf3e1e7a76e6e8a3ea1f5e2391971cf84598dd64a3370d9->leave($__internal_a00b461328540471acf3e1e7a76e6e8a3ea1f5e2391971cf84598dd64a3370d9_prof);
 
     }
 
@@ -177,10 +177,10 @@ class __TwigTemplate_ea16a81424a9dfd25c764385b614c3d5ac85ac5a5b5d8680e35d752fc2a
                 <td>
                     <ul>
                         <li>
-                            <a href=\"{{ path('adminReservierung_show', { 'id': reservierung.id }) }}\">show</a>
+                            <a href=\"{{ path('adminReservierung_show', { 'id': reservierung.id }) }}\"><i class=\"glyphicon glyphicon-info-sign\"></i></a>
                         </li>
                         <li>
-                            <a href=\"{{ path('adminReservierung_edit', { 'id': reservierung.id }) }}\">edit</a>
+                            <a href=\"{{ path('adminReservierung_edit', { 'id': reservierung.id }) }}\"><i class=\"glyphicon glyphicon-pencil\"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -191,7 +191,7 @@ class __TwigTemplate_ea16a81424a9dfd25c764385b614c3d5ac85ac5a5b5d8680e35d752fc2a
 
     <ul>
         <div class= \"cration_artiste\">
-            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminReservierung_new') }}\" ><i class=\"glyphicon glyphicon-plus\"></i>Neue Reservierung erfassen</a>
+            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminReservierung_new') }}\" >Neue Reservierung erfassen<i class=\"glyphicon glyphicon-plus\"></i></a>
 </div>
         </li>
     </ul>

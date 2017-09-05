@@ -64,10 +64,10 @@ class Gebaeude extends \HZ\raumReservierungBundle\Entity\Gebaeude implements \Do
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'name', 'raum'];
+            return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'image', 'raum'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'name', 'raum'];
+        return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Gebaeude' . "\0" . 'image', 'raum'];
     }
 
     /**
@@ -263,6 +263,28 @@ class Gebaeude extends \HZ\raumReservierungBundle\Entity\Gebaeude implements \Do
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRaum', []);
 
         return parent::getRaum();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setImage(\HZ\raumReservierungBundle\Entity\Image $image)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setImage', [$image]);
+
+        return parent::setImage($image);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage', []);
+
+        return parent::getImage();
     }
 
 }

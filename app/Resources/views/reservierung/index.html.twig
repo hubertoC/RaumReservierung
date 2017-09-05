@@ -22,10 +22,10 @@
                 <td>
                     <ul>
                         <li>
-                            <a href="{{ path('adminReservierung_show', { 'id': reservierung.id }) }}">show</a>
+                            <a href="{{ path('adminReservierung_show', { 'id': reservierung.id }) }}"><i class="glyphicon glyphicon-info-sign"></i></a>
                         </li>
                         <li>
-                            <a href="{{ path('adminReservierung_edit', { 'id': reservierung.id }) }}">edit</a>
+                            <a href="{{ path('adminReservierung_edit', { 'id': reservierung.id }) }}"><i class="glyphicon glyphicon-pencil"></i></a>
                         </li>
                     </ul>
                 </td>
@@ -36,7 +36,7 @@
 
     <ul>
         <div class= "cration_artiste">
-            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminReservierung_new') }}" ><i class="glyphicon glyphicon-plus"></i>Neue Reservierung erfassen</a>
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminReservierung_new') }}" >Neue Reservierung erfassen<i class="glyphicon glyphicon-plus"></i></a>
 </div>
         </li>
     </ul>

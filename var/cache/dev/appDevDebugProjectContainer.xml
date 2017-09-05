@@ -662,7 +662,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>kVf647oey+DdnDHsgt4jue</argument>
+      <argument>gHz3Ic0nEKxWX0fbI2L-Z8</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -672,7 +672,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>kVf647oey+DdnDHsgt4jue</argument>
+      <argument>gHz3Ic0nEKxWX0fbI2L-Z8</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -2019,14 +2019,6 @@
         <argument>2048</argument>
       </call>
       <call method="addListener">
-        <argument>console.command</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
         <argument>kernel.request</argument>
         <argument type="collection">
           <argument type="service" id="router_listener"/>
@@ -3057,12 +3049,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>59abb8ae4bb9c0.29549276</argument>
+      <argument>59ae96b313b270.66657836</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>59abb8ae4bb9c0.29549276</argument>
+      <argument>59ae96b313b270.66657836</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -4529,7 +4521,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>2iybWDHMB3</argument>
       <argument>0</argument>
-      <argument>kVf647oey+DdnDHsgt4jue</argument>
+      <argument>gHz3Ic0nEKxWX0fbI2L-Z8</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4537,7 +4529,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>9Haz2FhdSs</argument>
       <argument>0</argument>
-      <argument>kVf647oey+DdnDHsgt4jue</argument>
+      <argument>gHz3Ic0nEKxWX0fbI2L-Z8</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4545,7 +4537,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>SSCmdOesLF</argument>
       <argument>0</argument>
-      <argument>kVf647oey+DdnDHsgt4jue</argument>
+      <argument>gHz3Ic0nEKxWX0fbI2L-Z8</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4553,7 +4545,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>FaPl4+uJOa</argument>
       <argument>0</argument>
-      <argument>kVf647oey+DdnDHsgt4jue</argument>
+      <argument>gHz3Ic0nEKxWX0fbI2L-Z8</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

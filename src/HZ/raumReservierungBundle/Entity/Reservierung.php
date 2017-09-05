@@ -37,12 +37,12 @@ class Reservierung
 
     /**
        * @ORM\ManyToOne(targetEntity="Dozent", inversedBy="reservierung")
-       * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+       * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
        */
       protected $dozent;
       /**
          * @ORM\ManyToOne(targetEntity="HZ\raumReservierungBundle\Entity\Student")
-         * @ORM\JoinColumn(nullable=false)
+         * @ORM\JoinColumn(nullable=true)
          */
         private $student;
         /**
