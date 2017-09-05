@@ -1,21 +1,39 @@
-{% extends 'base.html.twig' %}
+{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Student edit</h1>
-
+    <div class= "cration_artiste">
+          <div class="cration mdl-shadow--2dp">
+            <div class="form_creation">
     {{ form_start(edit_form) }}
+    {{ form_row(edit_form.name, {'attr':{'class':'form-control'}})}}
+    {{ form_row(edit_form.vorname, {'attr':{'class':'form-control'}})}}
+    {{ form_row(edit_form.email, {'attr':{'class':'form-control'}})}}
+
         {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
+        <div class="button_p_edit">
+
+        <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Edit" />
+    </div>
     {{ form_end(edit_form) }}
 
     <ul>
         <li>
-            <a href="{{ path('adminStudent_index') }}">Back to the list</a>
-        </li>
+          <div class="retour">
+
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminStudent_index') }}">Back to the list</a>
+          </div>
+</li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+            <div class="modifier">
+
+                <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Delete">
+              </div>
+{{ form_end(delete_form) }}
         </li>
     </ul>
+  </div>
+  </div>
+  </div>
 {% endblock %}

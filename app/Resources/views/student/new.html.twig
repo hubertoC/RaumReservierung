@@ -1,16 +1,30 @@
-{% extends 'base.html.twig' %}
+{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Student creation</h1>
-
+    <div class= "cration_artiste">
+      <div class="cration mdl-shadow--2dp">
+         <div class="form_creation">
+           <div class="form-groupe">
     {{ form_start(form) }}
+    {{ form_row(form.name, {'attr':{'class':'form-control'}})}}
+    {{ form_row(form.vorname, {'attr':{'class':'form-control'}})}}
+    {{ form_row(form.email, {'attr':{'class':'form-control'}})}}
+
         {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+        <br>
+        <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Create" />
     {{ form_end(form) }}
 
     <ul>
         <li>
-            <a href="{{ path('adminStudent_index') }}">Back to the list</a>
-        </li>
+          <div class="lon">
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminStudent_index') }}">Back to the list</a>
+        </div>
+      </li>
     </ul>
+  </div>
+  </div>
+  </div>
+  </div>
 {% endblock %}

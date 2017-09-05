@@ -1,21 +1,43 @@
-{% extends 'base.html.twig' %}
+{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Reservierung edit</h1>
-
+    <div class= "cration_artiste">
+      <div class="cration mdl-shadow--2dp">
+        <div class="form_creation">
     {{ form_start(edit_form) }}
+    {{ form_row(edit_form.startDatum, {'attr':{'class':''}})}}
+    {{ form_row(edit_form.endDatum, {'attr':{'class':''}})}}
+    {{ form_row(edit_form.dozent, {'attr':{'class':'form-control'}})}}
+    {{ form_row(edit_form.student, {'attr':{'class':'form-control'}})}}
+    {{ form_row(edit_form.raum, {'attr':{'class':'form-control'}})}}
+    <div>
         {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
+      <div class="button_p_edit">
+        <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Edit" />
+
     {{ form_end(edit_form) }}
+
+
 
     <ul>
         <li>
-            <a href="{{ path('adminReservierung_index') }}">Back to the list</a>
+
+<div class="retour">
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminReservierung_index') }}">Back to the list</a>
+    </div>
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+            <div class="modifier">
+    <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Delete">
+  </div>
+
+
             {{ form_end(delete_form) }}
         </li>
     </ul>
+  </div>
+</div>
+<br>
 {% endblock %}

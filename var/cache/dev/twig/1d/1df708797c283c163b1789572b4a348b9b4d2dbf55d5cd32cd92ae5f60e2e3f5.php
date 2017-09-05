@@ -8,7 +8,7 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", ":reservierung:new.html.twig", 1);
+        $this->parent = $this->loadTemplate("layoutAdmin.html.twig", ":reservierung:new.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -16,66 +16,88 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "layoutAdmin.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c362ce1ee884f4429d4295b9faeff117cbe2a3008465055bb6f1abc0d0aa80c0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c362ce1ee884f4429d4295b9faeff117cbe2a3008465055bb6f1abc0d0aa80c0->enter($__internal_c362ce1ee884f4429d4295b9faeff117cbe2a3008465055bb6f1abc0d0aa80c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":reservierung:new.html.twig"));
+        $__internal_84c6223a36097d7a83a47cfddc002048339697cfc387792102bdd175cb8fe1d3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_84c6223a36097d7a83a47cfddc002048339697cfc387792102bdd175cb8fe1d3->enter($__internal_84c6223a36097d7a83a47cfddc002048339697cfc387792102bdd175cb8fe1d3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":reservierung:new.html.twig"));
 
-        $__internal_9d514410d8e2b7ddc800f2a9fb806ef8e57c1c1c9c2a253dfad2358284843f27 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9d514410d8e2b7ddc800f2a9fb806ef8e57c1c1c9c2a253dfad2358284843f27->enter($__internal_9d514410d8e2b7ddc800f2a9fb806ef8e57c1c1c9c2a253dfad2358284843f27_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":reservierung:new.html.twig"));
+        $__internal_56263a4b24a276569244e5163e1fecd1f4a40fcf97b1984c054942c5227c46cc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_56263a4b24a276569244e5163e1fecd1f4a40fcf97b1984c054942c5227c46cc->enter($__internal_56263a4b24a276569244e5163e1fecd1f4a40fcf97b1984c054942c5227c46cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":reservierung:new.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c362ce1ee884f4429d4295b9faeff117cbe2a3008465055bb6f1abc0d0aa80c0->leave($__internal_c362ce1ee884f4429d4295b9faeff117cbe2a3008465055bb6f1abc0d0aa80c0_prof);
+        $__internal_84c6223a36097d7a83a47cfddc002048339697cfc387792102bdd175cb8fe1d3->leave($__internal_84c6223a36097d7a83a47cfddc002048339697cfc387792102bdd175cb8fe1d3_prof);
 
         
-        $__internal_9d514410d8e2b7ddc800f2a9fb806ef8e57c1c1c9c2a253dfad2358284843f27->leave($__internal_9d514410d8e2b7ddc800f2a9fb806ef8e57c1c1c9c2a253dfad2358284843f27_prof);
+        $__internal_56263a4b24a276569244e5163e1fecd1f4a40fcf97b1984c054942c5227c46cc->leave($__internal_56263a4b24a276569244e5163e1fecd1f4a40fcf97b1984c054942c5227c46cc_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_4e2b2828fedd4b19bf835eec767c9dd936a2871511635fd6b2ed62e6ed854c7f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4e2b2828fedd4b19bf835eec767c9dd936a2871511635fd6b2ed62e6ed854c7f->enter($__internal_4e2b2828fedd4b19bf835eec767c9dd936a2871511635fd6b2ed62e6ed854c7f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_52b835aedb8a6b167f50f3e348b03e519620780d4c7349829b9d7fa699b65bee = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_52b835aedb8a6b167f50f3e348b03e519620780d4c7349829b9d7fa699b65bee->enter($__internal_52b835aedb8a6b167f50f3e348b03e519620780d4c7349829b9d7fa699b65bee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_cfd60af18f9944624fa96031937eb26941c4f64370da15dc2066176b16fd215e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cfd60af18f9944624fa96031937eb26941c4f64370da15dc2066176b16fd215e->enter($__internal_cfd60af18f9944624fa96031937eb26941c4f64370da15dc2066176b16fd215e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_06f74f71d89de506f0e3e3a77193caea685bf64bd145748fa835394222e92761 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_06f74f71d89de506f0e3e3a77193caea685bf64bd145748fa835394222e92761->enter($__internal_06f74f71d89de506f0e3e3a77193caea685bf64bd145748fa835394222e92761_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Reservierung creation</h1>
-
-    ";
-        // line 6
+    <div class= \"cration_artiste\">
+      <div class=\"cration mdl-shadow--2dp\">
+         <div class=\"form_creation\">
+           <div class=\"form-groupe\">
+             ";
+        // line 9
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
+
+             ";
+        // line 11
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dozent", array()), 'row', array("attr" => array("class" => "form-control")));
+        echo "
+             ";
+        // line 12
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "student", array()), 'row', array("attr" => array("class" => "form-control")));
+        echo "
+             ";
+        // line 13
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "raum", array()), 'row', array("attr" => array("class" => "form-control")));
+        echo "
+
         ";
-        // line 7
+        // line 15
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
-        <input type=\"submit\" value=\"Create\" />
+        <br>
+        <input class=\"mdl-button mdl-js-button mdl-button--raised\" type=\"submit\" value=\"Create\" />
     ";
-        // line 9
+        // line 18
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 
     <ul>
         <li>
-            <a href=\"";
-        // line 13
+          <div class=\"lon\">
+
+            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
+        // line 24
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminReservierung_index");
         echo "\">Back to the list</a>
-        </li>
+          </div>
+</li>
     </ul>
+  </div>
 ";
         
-        $__internal_cfd60af18f9944624fa96031937eb26941c4f64370da15dc2066176b16fd215e->leave($__internal_cfd60af18f9944624fa96031937eb26941c4f64370da15dc2066176b16fd215e_prof);
+        $__internal_06f74f71d89de506f0e3e3a77193caea685bf64bd145748fa835394222e92761->leave($__internal_06f74f71d89de506f0e3e3a77193caea685bf64bd145748fa835394222e92761_prof);
 
         
-        $__internal_4e2b2828fedd4b19bf835eec767c9dd936a2871511635fd6b2ed62e6ed854c7f->leave($__internal_4e2b2828fedd4b19bf835eec767c9dd936a2871511635fd6b2ed62e6ed854c7f_prof);
+        $__internal_52b835aedb8a6b167f50f3e348b03e519620780d4c7349829b9d7fa699b65bee->leave($__internal_52b835aedb8a6b167f50f3e348b03e519620780d4c7349829b9d7fa699b65bee_prof);
 
     }
 
@@ -91,7 +113,7 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
 
     public function getDebugInfo()
     {
-        return array (  69 => 13,  62 => 9,  57 => 7,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  89 => 24,  80 => 18,  74 => 15,  69 => 13,  65 => 12,  61 => 11,  56 => 9,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -104,21 +126,34 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'base.html.twig' %}
+        return new Twig_Source("{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Reservierung creation</h1>
+    <div class= \"cration_artiste\">
+      <div class=\"cration mdl-shadow--2dp\">
+         <div class=\"form_creation\">
+           <div class=\"form-groupe\">
+             {{ form_start(form) }}
 
-    {{ form_start(form) }}
+             {{ form_row(form.dozent, {'attr':{'class':'form-control'}})}}
+             {{ form_row(form.student, {'attr':{'class':'form-control'}})}}
+             {{ form_row(form.raum, {'attr':{'class':'form-control'}})}}
+
         {{ form_widget(form) }}
-        <input type=\"submit\" value=\"Create\" />
+        <br>
+        <input class=\"mdl-button mdl-js-button mdl-button--raised\" type=\"submit\" value=\"Create\" />
     {{ form_end(form) }}
 
     <ul>
         <li>
-            <a href=\"{{ path('adminReservierung_index') }}\">Back to the list</a>
-        </li>
+          <div class=\"lon\">
+
+            <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminReservierung_index') }}\">Back to the list</a>
+          </div>
+</li>
     </ul>
+  </div>
 {% endblock %}
 ", ":reservierung:new.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/reservierung/new.html.twig");
     }

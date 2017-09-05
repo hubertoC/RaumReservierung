@@ -29,11 +29,11 @@ li {
 }
 
 .navbar {
-  background-color: #F06292;
+  background-color: #37474F;
 }
 
 .cration_artiste .mdl-button {
-  color: #F06292;
+  color: #37474F;
 }
 
 .demo-card-square.mdl-card {
@@ -104,17 +104,22 @@ input.mdl-button {
 }
 
 .show_suprimer .mdl-button {
-  color: #F06292;
+  color: #37474F;
+  margin-left: 0em;
 }
 
 .show_modifier .mdl-button {
-  color: #F06292;
+  color: #37474F;
+  margin-right: 6em;
 }
 
 .show_retour .mdl-button {
-  color: #F06292;
+  color: #37474F;
 }
 
 .conte_show {
   width: 62em;
+}
+a{
+  color: #000;
 }

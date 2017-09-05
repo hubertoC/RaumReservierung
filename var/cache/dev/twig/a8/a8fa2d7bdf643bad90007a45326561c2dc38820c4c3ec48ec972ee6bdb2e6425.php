@@ -1,6 +1,6 @@
 <?php
 
-/* :gebaeude:show.html.twig */
+/* gebaeude/show.html.twig */
 class __TwigTemplate_7afe820ac7ea24ee89d24042ff9c8f5c3632890b904fb4639d70af6594e2cb74 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_7afe820ac7ea24ee89d24042ff9c8f5c3632890b904fb4639d70af6594e
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", ":gebaeude:show.html.twig", 1);
+        $this->parent = $this->loadTemplate("layoutAdmin.html.twig", "gebaeude/show.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -16,101 +16,115 @@ class __TwigTemplate_7afe820ac7ea24ee89d24042ff9c8f5c3632890b904fb4639d70af6594e
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "layoutAdmin.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f07a44fc14f52454886501abc4811fb2ed6be0f962e2a02537e4e34755b3c94f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f07a44fc14f52454886501abc4811fb2ed6be0f962e2a02537e4e34755b3c94f->enter($__internal_f07a44fc14f52454886501abc4811fb2ed6be0f962e2a02537e4e34755b3c94f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":gebaeude:show.html.twig"));
+        $__internal_2d2c6ac673d544e485b6be1a64db7952a7f55326867f1a6ea199bccf11cabd54 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2d2c6ac673d544e485b6be1a64db7952a7f55326867f1a6ea199bccf11cabd54->enter($__internal_2d2c6ac673d544e485b6be1a64db7952a7f55326867f1a6ea199bccf11cabd54_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gebaeude/show.html.twig"));
 
-        $__internal_394975ae8163f46a74d4a556a0cce5257ebb0d1d419c65731e2e62d6f880c606 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_394975ae8163f46a74d4a556a0cce5257ebb0d1d419c65731e2e62d6f880c606->enter($__internal_394975ae8163f46a74d4a556a0cce5257ebb0d1d419c65731e2e62d6f880c606_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":gebaeude:show.html.twig"));
+        $__internal_0c04aad2db93b126db6765bc3eb9f44f3d5aebb82843291f14c66c4f22155af6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0c04aad2db93b126db6765bc3eb9f44f3d5aebb82843291f14c66c4f22155af6->enter($__internal_0c04aad2db93b126db6765bc3eb9f44f3d5aebb82843291f14c66c4f22155af6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gebaeude/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f07a44fc14f52454886501abc4811fb2ed6be0f962e2a02537e4e34755b3c94f->leave($__internal_f07a44fc14f52454886501abc4811fb2ed6be0f962e2a02537e4e34755b3c94f_prof);
+        $__internal_2d2c6ac673d544e485b6be1a64db7952a7f55326867f1a6ea199bccf11cabd54->leave($__internal_2d2c6ac673d544e485b6be1a64db7952a7f55326867f1a6ea199bccf11cabd54_prof);
 
         
-        $__internal_394975ae8163f46a74d4a556a0cce5257ebb0d1d419c65731e2e62d6f880c606->leave($__internal_394975ae8163f46a74d4a556a0cce5257ebb0d1d419c65731e2e62d6f880c606_prof);
+        $__internal_0c04aad2db93b126db6765bc3eb9f44f3d5aebb82843291f14c66c4f22155af6->leave($__internal_0c04aad2db93b126db6765bc3eb9f44f3d5aebb82843291f14c66c4f22155af6_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_0069cb8a199039a8f870b3bacf1848da794577c6cb884ae1d6d1f32526443d4a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0069cb8a199039a8f870b3bacf1848da794577c6cb884ae1d6d1f32526443d4a->enter($__internal_0069cb8a199039a8f870b3bacf1848da794577c6cb884ae1d6d1f32526443d4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d6c9b585aab8d4487df1a9152bc61b72bf2101a1b8e96a636030bf0220d40946 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d6c9b585aab8d4487df1a9152bc61b72bf2101a1b8e96a636030bf0220d40946->enter($__internal_d6c9b585aab8d4487df1a9152bc61b72bf2101a1b8e96a636030bf0220d40946_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_4a64668e40470896964f8a577fa115c884d244193105b4da72fff4e1e377660d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4a64668e40470896964f8a577fa115c884d244193105b4da72fff4e1e377660d->enter($__internal_4a64668e40470896964f8a577fa115c884d244193105b4da72fff4e1e377660d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_11cb4a301bfc44e2eadc0661629b51eda464f8f36bbf8f4da172aca9d8255a94 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_11cb4a301bfc44e2eadc0661629b51eda464f8f36bbf8f4da172aca9d8255a94->enter($__internal_11cb4a301bfc44e2eadc0661629b51eda464f8f36bbf8f4da172aca9d8255a94_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Gebaeude</h1>
+    <div class=\"conte_show\">
 
-    <table>
+    <table class=\"mdl-data-table mdl-js-data-table mdl-shadow--2dp\">
         <tbody>
             <tr>
                 <th>Id</th>
                 <td>";
-        // line 10
+        // line 11
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["gebaeude"]) ? $context["gebaeude"] : $this->getContext($context, "gebaeude")), "id", array()), "html", null, true);
         echo "</td>
             </tr>
             <tr>
                 <th>Nummer</th>
                 <td>";
-        // line 14
+        // line 15
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["gebaeude"]) ? $context["gebaeude"] : $this->getContext($context, "gebaeude")), "nummer", array()), "html", null, true);
         echo "</td>
             </tr>
             <tr>
                 <th>Name</th>
                 <td>";
-        // line 18
+        // line 19
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["gebaeude"]) ? $context["gebaeude"] : $this->getContext($context, "gebaeude")), "name", array()), "html", null, true);
         echo "</td>
             </tr>
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href=\"";
+    <li>
+        ";
         // line 25
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_index");
-        echo "\">Back to the list</a>
-        </li>
-        <li>
-            <a href=\"";
-        // line 28
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_edit", array("id" => $this->getAttribute((isset($context["gebaeude"]) ? $context["gebaeude"] : $this->getContext($context, "gebaeude")), "id", array()))), "html", null, true);
-        echo "\">Edit</a>
-        </li>
-        <li>
-            ";
-        // line 31
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_start');
         echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 33
+        <div class=\"show_suprimer\">
+
+            <input class=\"mdl-button mdl-js-button mdl-button--raised\" type=\"submit\" value=\"Delete\">
+        ";
+        // line 29
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_end');
         echo "
+      </div>
+    </li>
+    <ul>
+        <li>
+          <div class=\"show_modifier\">
+
+          <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
+        // line 36
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_edit", array("id" => $this->getAttribute((isset($context["gebaeude"]) ? $context["gebaeude"] : $this->getContext($context, "gebaeude")), "id", array()))), "html", null, true);
+        echo "\">Edit</a>
+</div>
         </li>
+      </ul>
+      <ul>
+        <li>
+          <div class=\"show_retour\">
+
+          <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
+        // line 44
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminGebaeude_index");
+        echo "\">Back to the list</a>
+</div>
+        </li>
+
     </ul>
+  </div>
 ";
         
-        $__internal_4a64668e40470896964f8a577fa115c884d244193105b4da72fff4e1e377660d->leave($__internal_4a64668e40470896964f8a577fa115c884d244193105b4da72fff4e1e377660d_prof);
+        $__internal_11cb4a301bfc44e2eadc0661629b51eda464f8f36bbf8f4da172aca9d8255a94->leave($__internal_11cb4a301bfc44e2eadc0661629b51eda464f8f36bbf8f4da172aca9d8255a94_prof);
 
         
-        $__internal_0069cb8a199039a8f870b3bacf1848da794577c6cb884ae1d6d1f32526443d4a->leave($__internal_0069cb8a199039a8f870b3bacf1848da794577c6cb884ae1d6d1f32526443d4a_prof);
+        $__internal_d6c9b585aab8d4487df1a9152bc61b72bf2101a1b8e96a636030bf0220d40946->leave($__internal_d6c9b585aab8d4487df1a9152bc61b72bf2101a1b8e96a636030bf0220d40946_prof);
 
     }
 
     public function getTemplateName()
     {
-        return ":gebaeude:show.html.twig";
+        return "gebaeude/show.html.twig";
     }
 
     public function isTraitable()
@@ -120,7 +134,7 @@ class __TwigTemplate_7afe820ac7ea24ee89d24042ff9c8f5c3632890b904fb4639d70af6594e
 
     public function getDebugInfo()
     {
-        return array (  98 => 33,  93 => 31,  87 => 28,  81 => 25,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  109 => 44,  98 => 36,  88 => 29,  81 => 25,  72 => 19,  65 => 15,  58 => 11,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -133,12 +147,13 @@ class __TwigTemplate_7afe820ac7ea24ee89d24042ff9c8f5c3632890b904fb4639d70af6594e
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'base.html.twig' %}
+        return new Twig_Source("{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Gebaeude</h1>
+    <div class=\"conte_show\">
 
-    <table>
+    <table class=\"mdl-data-table mdl-js-data-table mdl-shadow--2dp\">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -155,20 +170,33 @@ class __TwigTemplate_7afe820ac7ea24ee89d24042ff9c8f5c3632890b904fb4639d70af6594e
         </tbody>
     </table>
 
+    <li>
+        {{ form_start(delete_form) }}
+        <div class=\"show_suprimer\">
+
+            <input class=\"mdl-button mdl-js-button mdl-button--raised\" type=\"submit\" value=\"Delete\">
+        {{ form_end(delete_form) }}
+      </div>
+    </li>
     <ul>
         <li>
-            <a href=\"{{ path('adminGebaeude_index') }}\">Back to the list</a>
+          <div class=\"show_modifier\">
+
+          <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}\">Edit</a>
+</div>
         </li>
+      </ul>
+      <ul>
         <li>
-            <a href=\"{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}\">Edit</a>
+          <div class=\"show_retour\">
+
+          <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"{{ path('adminGebaeude_index') }}\">Back to the list</a>
+</div>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
-        </li>
+
     </ul>
+  </div>
 {% endblock %}
-", ":gebaeude:show.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/gebaeude/show.html.twig");
+", "gebaeude/show.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/gebaeude/show.html.twig");
     }
 }

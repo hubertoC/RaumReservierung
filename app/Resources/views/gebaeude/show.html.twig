@@ -1,9 +1,10 @@
-{% extends 'base.html.twig' %}
+{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
     <h1>Gebaeude</h1>
+    <div class="conte_show">
 
-    <table>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -20,17 +21,30 @@
         </tbody>
     </table>
 
+    <li>
+        {{ form_start(delete_form) }}
+        <div class="show_suprimer">
+
+            <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Delete">
+        {{ form_end(delete_form) }}
+      </div>
+    </li>
     <ul>
         <li>
-            <a href="{{ path('adminGebaeude_index') }}">Back to the list</a>
+          <div class="show_modifier">
+
+          <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}">Edit</a>
+</div>
         </li>
+      </ul>
+      <ul>
         <li>
-            <a href="{{ path('adminGebaeude_edit', { 'id': gebaeude.id }) }}">Edit</a>
+          <div class="show_retour">
+
+          <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminGebaeude_index') }}">Back to the list</a>
+</div>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
+
     </ul>
+  </div>
 {% endblock %}
