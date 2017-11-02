@@ -9,8 +9,10 @@
            <div class="form-groupe">
              {{ form_row(form.nummer, {'attr':{'class':'form-control'}})}}
              {{ form_row(form.name, {'attr':{'class':'form-control'}})}}
-             {{ form_row(form.gebaeude, {'attr':{'class':'form-control'}})}}
-
+             {{ form_row(form.sitzplatze, {'attr':{'class':'form-control'}})}}
+             {{ form_row(form.beamer, {'attr':{'class':'form-control'}})}}
+             {{ form_row(form.steckdose, {'attr':{'class':'form-control'}})}}
+             {{ form_row(form.usbAnschluss, {'attr':{'class':'form-control'}})}}
         {{ form_widget(form) }}
         <br>
         <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Create" />

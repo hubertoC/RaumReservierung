@@ -421,6 +421,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // h_zraum_reservierung_confirmation
+        if ('/confirmation' === $pathinfo) {
+            return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::confirmationAction',  '_route' => 'h_zraum_reservierung_confirmation',);
+        }
+
         // h_zraum_reservierung_homepage
         if ('' === $trimmedPathinfo) {
             if (substr($pathinfo, -1) !== '/') {
@@ -431,7 +436,7 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // h_zraum_reservierung_gebaeudeRaum
-        if (0 === strpos($pathinfo, '/gebauedeRaum') && preg_match('#^/gebauedeRaum/(?P<gebaeude>[^/]++)$#s', $pathinfo, $matches)) {
+        if (0 === strpos($pathinfo, '/gebauedeRaum') && preg_match('#^/gebauedeRaum/(?P<gebaeude>[^/]++)/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'h_zraum_reservierung_gebaeudeRaum')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::gebauedeRaumAction',));
         }
 
@@ -545,8 +550,18 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // h_zraum_reservierung_reservierung
-        if ('/buchen/reservierung' === $pathinfo) {
-            return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::reservierungAction',  '_route' => 'h_zraum_reservierung_reservierung',);
+        if (0 === strpos($pathinfo, '/buchen/reservierung') && preg_match('#^/buchen/reservierung/(?P<raumId>[^/]++)/(?P<raumFrei>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'h_zraum_reservierung_reservierung')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::reservierungAction',));
+        }
+
+        // h_zraum_reservierung_kontakt
+        if ('/kontakt' === $pathinfo) {
+            return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::kontaktAction',  '_route' => 'h_zraum_reservierung_kontakt',);
+        }
+
+        // h_zraum_reservierung_search
+        if (0 === strpos($pathinfo, '/search') && preg_match('#^/search/(?P<raumId>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'h_zraum_reservierung_search')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::searchAction',));
         }
 
         if (0 === strpos($pathinfo, '/login')) {

@@ -1,14 +1,50 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Raum Infos</title>
-  </head>
-  <body>
-    Infos sur une seule salle!!!!:
-    Nom: {{infos.name}}
+{% extends 'layoutPublic.html.twig' %}
 
-    <a href="{{ path('h_zraum_reservierung_reservierung') }}">
-<button type="button" name="button">Buchen</button>
-  </body>
-</html>
+{% block body %}
+  <br><br><br><br><br><br>
+
+  <div class="alt-grid">
+    <div class="container">
+      <div class="infosRaum">
+        Raum Information:
+      </div>
+      <br>
+      <div class="col-lg-4">
+        <img src="{{asset(infos.image.webPath)}}" alt="" width="430" height="300">
+      </div>
+      <div class="col-lg-8 ">
+        <section id="categorie">
+          <div class="infosNummer">
+            Raum: {{infos.nummer}}
+          </div>
+          <br>
+          <div class="detailRaum">
+            <ul>
+              <li>
+                Sitzplätze: {{infos.sitzplatze}}
+              </li>
+              <li>
+                Beamer: {{infos.beamer}}
+              </li>
+              <li>
+                Steckdose: {{infos.steckdose}}
+              </li>
+              <li>
+                USB Anschlüsse: {{infos.usbAnschluss}}
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="weiterButton">
+  
+  <a href="{{ path('h_zraum_reservierung_reservierung',{'raumId': infos.id, 'raumFrei': infos.frei}) }}">
+
+  <button class="mdl-button mdl-js-button mdl-button--raised" type="button" name="button">Weiter</button></a>
+</div>
+<br>
+{% endblock %}

@@ -24,33 +24,45 @@ class Reservierung
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="startDatum", type="datetime")
+     * @ORM\Column(name="start", type="datetime")
      */
-    private $startDatum;
+    private $start;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="endDatum", type="datetime")
+     * @ORM\Column(name="end", type="datetime")
      */
-    private $endDatum;
+    private $end;
 
     /**
-       * @ORM\ManyToOne(targetEntity="Dozent", inversedBy="reservierung")
-       * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
-       */
-      protected $dozent;
-      /**
-         * @ORM\ManyToOne(targetEntity="HZ\raumReservierungBundle\Entity\Student")
-         * @ORM\JoinColumn(nullable=true)
-         */
-        private $student;
-        /**
-           * @ORM\ManyToOne(targetEntity="HZ\raumReservierungBundle\Entity\Raum")
-           * @ORM\JoinColumn(nullable=false)
-           */
-          private $raum;
+     * @var int
+     *
+     * @ORM\Column(name="raum", type="integer")
+     */
+    private $raum;
 
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=255)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url", type="string", length=255, nullable=true)
+     */
+    private $url;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="className", type="string", length=255, nullable=true)
+     */
+    private $className;
     /**
      * Get id
      *
@@ -61,110 +73,18 @@ class Reservierung
         return $this->id;
     }
 
-    /**
-     * Set startDatum
-     *
-     * @param \DateTime $startDatum
-     *
-     * @return Reservierung
-     */
-    public function setStartDatum($startDatum)
-    {
-        $this->startDatum = $startDatum;
+  
 
-        return $this;
-    }
 
-    /**
-     * Get startDatum
-     *
-     * @return \DateTime
-     */
-    public function getStartDatum()
-    {
-        return $this->startDatum;
-    }
-
-    /**
-     * Set endDatum
-     *
-     * @param \DateTime $endDatum
-     *
-     * @return Reservierung
-     */
-    public function setEndDatum($endDatum)
-    {
-        $this->endDatum = $endDatum;
-
-        return $this;
-    }
-
-    /**
-     * Get endDatum
-     *
-     * @return \DateTime
-     */
-    public function getEndDatum()
-    {
-        return $this->endDatum;
-    }
-
-    /**
-     * Set dozent
-     *
-     * @param \HZ\raumReservierungBundle\Entity\Dozent $dozent
-     *
-     * @return Reservierung
-     */
-    public function setDozent(\HZ\raumReservierungBundle\Entity\Dozent $dozent)
-    {
-        $this->dozent = $dozent;
-
-        return $this;
-    }
-
-    /**
-     * Get dozent
-     *
-     * @return \HZ\raumReservierungBundle\Entity\Dozent
-     */
-    public function getDozent()
-    {
-        return $this->dozent;
-    }
-
-    /**
-     * Set student
-     *
-     * @param \HZ\raumReservierungBundle\Entity\Student $student
-     *
-     * @return Reservierung
-     */
-    public function setStudent(\HZ\raumReservierungBundle\Entity\Student $student)
-    {
-        $this->student = $student;
-
-        return $this;
-    }
-
-    /**
-     * Get student
-     *
-     * @return \HZ\raumReservierungBundle\Entity\Student
-     */
-    public function getStudent()
-    {
-        return $this->student;
-    }
 
     /**
      * Set raum
      *
-     * @param \HZ\raumReservierungBundle\Entity\Raum $raum
+     * @param integer $raum
      *
      * @return Reservierung
      */
-    public function setRaum(\HZ\raumReservierungBundle\Entity\Raum $raum)
+    public function setRaum($raum)
     {
         $this->raum = $raum;
 
@@ -174,10 +94,130 @@ class Reservierung
     /**
      * Get raum
      *
-     * @return \HZ\raumReservierungBundle\Entity\Raum
+     * @return integer
      */
     public function getRaum()
     {
         return $this->raum;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Reservierung
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     *
+     * @return Reservierung
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * Set start
+     *
+     * @param \DateTime $start
+     *
+     * @return Reservierung
+     */
+    public function setStart($start)
+    {
+        $this->start = $start;
+
+        return $this;
+    }
+
+    /**
+     * Get start
+     *
+     * @return \DateTime
+     */
+    public function getStart()
+    {
+        return $this->start;
+    }
+
+    /**
+     * Set end
+     *
+     * @param \DateTime $end
+     *
+     * @return Reservierung
+     */
+    public function setEnd($end)
+    {
+        $this->end = $end;
+
+        return $this;
+    }
+
+    /**
+     * Get end
+     *
+     * @return \DateTime
+     */
+    public function getEnd()
+    {
+        return $this->end;
+    }
+
+    /**
+     * Set className
+     *
+     * @param string $className
+     *
+     * @return Reservierung
+     */
+    public function setClassName($className)
+    {
+        $this->className = $className;
+
+        return $this;
+    }
+
+    /**
+     * Get className
+     *
+     * @return string
+     */
+    public function getClassName()
+    {
+        return $this->className;
     }
 }

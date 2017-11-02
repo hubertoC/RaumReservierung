@@ -1,6 +1,6 @@
 <?php
 
-/* raum/index.html.twig */
+/* :raum:index.html.twig */
 class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d321956aad extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("layoutAdmin.html.twig", "raum/index.html.twig", 1);
+        $this->parent = $this->loadTemplate("layoutAdmin.html.twig", ":raum:index.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -21,32 +21,32 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9->enter($__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "raum/index.html.twig"));
+        $__internal_4d9471d8958ba7a7a03d9b83b514e091e7c68cf00e814e7d9a62cb781fbb1386 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4d9471d8958ba7a7a03d9b83b514e091e7c68cf00e814e7d9a62cb781fbb1386->enter($__internal_4d9471d8958ba7a7a03d9b83b514e091e7c68cf00e814e7d9a62cb781fbb1386_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":raum:index.html.twig"));
 
-        $__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f->enter($__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "raum/index.html.twig"));
+        $__internal_0a376c5a0d982e4dca7cfc9825883a9625e9c48b85b36546443df3423d946259 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0a376c5a0d982e4dca7cfc9825883a9625e9c48b85b36546443df3423d946259->enter($__internal_0a376c5a0d982e4dca7cfc9825883a9625e9c48b85b36546443df3423d946259_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":raum:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9->leave($__internal_fc1cf0bace2fc91f774fbf2d31c1b9bd6286a6f985f49835d4eb61a19dddadc9_prof);
+        $__internal_4d9471d8958ba7a7a03d9b83b514e091e7c68cf00e814e7d9a62cb781fbb1386->leave($__internal_4d9471d8958ba7a7a03d9b83b514e091e7c68cf00e814e7d9a62cb781fbb1386_prof);
 
         
-        $__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f->leave($__internal_3d23d490355094efad7f88339b096e9ee67063412ac208e233faa7d582637f4f_prof);
+        $__internal_0a376c5a0d982e4dca7cfc9825883a9625e9c48b85b36546443df3423d946259->leave($__internal_0a376c5a0d982e4dca7cfc9825883a9625e9c48b85b36546443df3423d946259_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea->enter($__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d56e86689356df5d5bd3c093f6bd670db5327594fcc588f3b221955f6955d21d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d56e86689356df5d5bd3c093f6bd670db5327594fcc588f3b221955f6955d21d->enter($__internal_d56e86689356df5d5bd3c093f6bd670db5327594fcc588f3b221955f6955d21d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc->enter($__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d5cc504f5ffa9bef78bdfe8c8def7ae24198ca8957125d401c9eb43ea11b5abe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d5cc504f5ffa9bef78bdfe8c8def7ae24198ca8957125d401c9eb43ea11b5abe->enter($__internal_d5cc504f5ffa9bef78bdfe8c8def7ae24198ca8957125d401c9eb43ea11b5abe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    <h1>Raums list</h1>
+        echo "    <h1>Raum list</h1>
 
     <table class=\"mdl-data-table mdl-js-data-table mdl-shadow--2dp\">
         <thead>
@@ -123,16 +123,16 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
     </ul>
 ";
         
-        $__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc->leave($__internal_d735213efa4229cdcc5f6a7c220985a79aa17cf11a518d044947f6138de3b9fc_prof);
+        $__internal_d5cc504f5ffa9bef78bdfe8c8def7ae24198ca8957125d401c9eb43ea11b5abe->leave($__internal_d5cc504f5ffa9bef78bdfe8c8def7ae24198ca8957125d401c9eb43ea11b5abe_prof);
 
         
-        $__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea->leave($__internal_ed69b8ff0deae191c1c7c34e929bab9d8fe80801695c5e57c9626ae29e9f0cea_prof);
+        $__internal_d56e86689356df5d5bd3c093f6bd670db5327594fcc588f3b221955f6955d21d->leave($__internal_d56e86689356df5d5bd3c093f6bd670db5327594fcc588f3b221955f6955d21d_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "raum/index.html.twig";
+        return ":raum:index.html.twig";
     }
 
     public function isTraitable()
@@ -158,7 +158,7 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
         return new Twig_Source("{% extends 'layoutAdmin.html.twig' %}
 
 {% block body %}
-    <h1>Raums list</h1>
+    <h1>Raum list</h1>
 
     <table class=\"mdl-data-table mdl-js-data-table mdl-shadow--2dp\">
         <thead>
@@ -201,6 +201,6 @@ class __TwigTemplate_965bd0719f8c8c3a2170fd4cd219716d55b15d185afefc7f33e438d3219
 </li>
     </ul>
 {% endblock %}
-", "raum/index.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/raum/index.html.twig");
+", ":raum:index.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/raum/index.html.twig");
     }
 }

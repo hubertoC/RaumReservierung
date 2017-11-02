@@ -25,8 +25,9 @@ h_zraum_reservierung_adminGebaeude:
 
 
 
-
-
+h_zraum_reservierung_confirmation:
+    path:     /confirmation
+    defaults: { _controller: HZraumReservierungBundle:RaumReservierung:confirmation }
 
 
 h_zraum_reservierung_homepage:
@@ -35,7 +36,7 @@ h_zraum_reservierung_homepage:
 
 
 h_zraum_reservierung_gebaeudeRaum:
-    path:     /gebauedeRaum/{gebaeude}
+    path:     /gebauedeRaum/{gebaeude}/{name}
     defaults:
       _controller: HZraumReservierungBundle:RaumReservierung:gebauedeRaum
 
@@ -45,6 +46,18 @@ h_zraum_reservierung_raumInfos:
       _controller: HZraumReservierungBundle:RaumReservierung:raumInfos
 
 h_zraum_reservierung_reservierung:
-    path:     /buchen/reservierung
+    path:     /buchen/reservierung/{raumId}/{raumFrei}
     defaults:
       _controller: HZraumReservierungBundle:RaumReservierung:reservierung
+
+
+
+h_zraum_reservierung_kontakt:
+    path:     /kontakt
+    defaults:
+      _controller: HZraumReservierungBundle:RaumReservierung:kontakt
+
+h_zraum_reservierung_search:
+    path:     /search/{raumId}
+    defaults:
+      _controller: HZraumReservierungBundle:RaumReservierung:search

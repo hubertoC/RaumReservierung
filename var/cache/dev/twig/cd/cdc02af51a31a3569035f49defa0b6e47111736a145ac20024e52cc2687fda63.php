@@ -15,11 +15,11 @@ class __TwigTemplate_501dc1086bee2e2ab948fdcb4a6aa51e9693e86b6c9d0bd11f782173fd1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f969d327f128d87ffaff80fcabee686163725209493b118bd6c00f04132aecb8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f969d327f128d87ffaff80fcabee686163725209493b118bd6c00f04132aecb8->enter($__internal_f969d327f128d87ffaff80fcabee686163725209493b118bd6c00f04132aecb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/exception.css.twig"));
+        $__internal_c594cd932448cf31e574f87456816f34e31f3957bf26ce620c100da52a761e98 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c594cd932448cf31e574f87456816f34e31f3957bf26ce620c100da52a761e98->enter($__internal_c594cd932448cf31e574f87456816f34e31f3957bf26ce620c100da52a761e98_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/exception.css.twig"));
 
-        $__internal_6635d4904f6c8488e721f852ace8f4af2cd240310b0f89fa7d3b49c6c7aa2992 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6635d4904f6c8488e721f852ace8f4af2cd240310b0f89fa7d3b49c6c7aa2992->enter($__internal_6635d4904f6c8488e721f852ace8f4af2cd240310b0f89fa7d3b49c6c7aa2992_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/exception.css.twig"));
+        $__internal_09bce3aeea3cc70a541fd4790ccc6fdf513a738b51d522560dee8cb429e5571e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_09bce3aeea3cc70a541fd4790ccc6fdf513a738b51d522560dee8cb429e5571e->enter($__internal_09bce3aeea3cc70a541fd4790ccc6fdf513a738b51d522560dee8cb429e5571e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/exception.css.twig"));
 
         // line 1
         echo "html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{margin:.67em 0;font-size:2em}mark{color:#000;background:#ff0}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{height:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{margin:0;font:inherit;color:inherit}button{overflow:visible}button,select{text-transform:none}button,html input[type=\"button\"],input[type=\"reset\"],input[type=\"submit\"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}input{line-height:normal}input[type=\"checkbox\"],input[type=\"radio\"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=\"number\"]::-webkit-inner-spin-button,input[type=\"number\"]::-webkit-outer-spin-button{height:auto}input[type=\"search\"]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}input[type=\"search\"]::-webkit-search-cancel-button,input[type=\"search\"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{padding:.35em .625em .75em;margin:0 2px;border:1px solid silver}legend{padding:0;border:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-spacing:0;border-collapse:collapse}td,th{padding:0}
@@ -104,7 +104,7 @@ header .container { display: flex; justify-content: space-between; }
 .exception-hierarchy .icon svg { height: 13px; width: 13px; vertical-align: -2px; }
 
 .exception-without-message .exception-message-wrapper { display: none; }
-.exception-message-wrapper .container { display: flex; align-items: flex-start; min-height: 70px; padding: 10px 0 8px; }
+.exception-message-wrapper .container { display: flex; align-items: flex-start; min-height: 70px; padding: 10px 15px 8px; }
 .exception-message { flex-grow: 1; }
 .exception-message, .exception-message a { color: #FFF; font-size: 21px; font-weight: 400; margin: 0; }
 .exception-message.long { font-size: 18px; }
@@ -131,11 +131,11 @@ header .container { display: flex; justify-content: space-between; }
 .trace-line .icon svg { height: 16px; width: 16px; }
 .trace-line-header { padding-left: 36px; }
 
-.trace-file-path, .trace-file-path a { color: #999; color: #795da3; color: #B0413E; color: #222; font-size: 13px; }
+.trace-file-path, .trace-file-path a { color: #222; font-size: 13px; }
 .trace-class { color: #B0413E; }
 .trace-type { padding: 0 2px; }
-.trace-method { color: #B0413E; color: #222; font-weight: bold; color: #B0413E; }
-.trace-arguments { color: #222; color: #999; font-weight: normal; color: #795da3; color: #777; padding-left: 2px; }
+.trace-method { color: #B0413E; font-weight: bold; }
+.trace-arguments { color: #777; font-weight: normal; padding-left: 2px; }
 
 .trace-code { background: #FFF; font-size: 12px; margin: 10px 10px 2px 10px; padding: 10px; overflow-x: auto; white-space: nowrap; }
 .trace-code ol { margin: 0; float: left; }
@@ -152,10 +152,10 @@ header .container { display: flex; justify-content: space-between; }
 }
 ";
         
-        $__internal_f969d327f128d87ffaff80fcabee686163725209493b118bd6c00f04132aecb8->leave($__internal_f969d327f128d87ffaff80fcabee686163725209493b118bd6c00f04132aecb8_prof);
+        $__internal_c594cd932448cf31e574f87456816f34e31f3957bf26ce620c100da52a761e98->leave($__internal_c594cd932448cf31e574f87456816f34e31f3957bf26ce620c100da52a761e98_prof);
 
         
-        $__internal_6635d4904f6c8488e721f852ace8f4af2cd240310b0f89fa7d3b49c6c7aa2992->leave($__internal_6635d4904f6c8488e721f852ace8f4af2cd240310b0f89fa7d3b49c6c7aa2992_prof);
+        $__internal_09bce3aeea3cc70a541fd4790ccc6fdf513a738b51d522560dee8cb429e5571e->leave($__internal_09bce3aeea3cc70a541fd4790ccc6fdf513a738b51d522560dee8cb429e5571e_prof);
 
     }
 
@@ -261,7 +261,7 @@ header .container { display: flex; justify-content: space-between; }
 .exception-hierarchy .icon svg { height: 13px; width: 13px; vertical-align: -2px; }
 
 .exception-without-message .exception-message-wrapper { display: none; }
-.exception-message-wrapper .container { display: flex; align-items: flex-start; min-height: 70px; padding: 10px 0 8px; }
+.exception-message-wrapper .container { display: flex; align-items: flex-start; min-height: 70px; padding: 10px 15px 8px; }
 .exception-message { flex-grow: 1; }
 .exception-message, .exception-message a { color: #FFF; font-size: 21px; font-weight: 400; margin: 0; }
 .exception-message.long { font-size: 18px; }
@@ -288,11 +288,11 @@ header .container { display: flex; justify-content: space-between; }
 .trace-line .icon svg { height: 16px; width: 16px; }
 .trace-line-header { padding-left: 36px; }
 
-.trace-file-path, .trace-file-path a { color: #999; color: #795da3; color: #B0413E; color: #222; font-size: 13px; }
+.trace-file-path, .trace-file-path a { color: #222; font-size: 13px; }
 .trace-class { color: #B0413E; }
 .trace-type { padding: 0 2px; }
-.trace-method { color: #B0413E; color: #222; font-weight: bold; color: #B0413E; }
-.trace-arguments { color: #222; color: #999; font-weight: normal; color: #795da3; color: #777; padding-left: 2px; }
+.trace-method { color: #B0413E; font-weight: bold; }
+.trace-arguments { color: #777; font-weight: normal; padding-left: 2px; }
 
 .trace-code { background: #FFF; font-size: 12px; margin: 10px 10px 2px 10px; padding: 10px; overflow-x: auto; white-space: nowrap; }
 .trace-code ol { margin: 0; float: left; }
