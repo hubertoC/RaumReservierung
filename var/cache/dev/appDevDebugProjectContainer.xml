@@ -99,7 +99,7 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_host">127.0.0.1</parameter>
-    <parameter key="database_port">3306</parameter>
+    <parameter key="database_port">8080</parameter>
     <parameter key="database_name">raum_reservierung</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">null</parameter>
@@ -662,7 +662,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>A8QTOWMyRdaeOF64mieSVt</argument>
+      <argument>GH0F+pKyc3x9x3yDsnSd4+</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -672,7 +672,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>A8QTOWMyRdaeOF64mieSVt</argument>
+      <argument>GH0F+pKyc3x9x3yDsnSd4+</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -2019,6 +2019,14 @@
         <argument>2048</argument>
       </call>
       <call method="addListener">
+        <argument>console.command</argument>
+        <argument type="collection">
+          <argument type="service" id="debug.debug_handlers_listener"/>
+          <argument>configure</argument>
+        </argument>
+        <argument>2048</argument>
+      </call>
+      <call method="addListener">
         <argument>kernel.request</argument>
         <argument type="collection">
           <argument type="service" id="router_listener"/>
@@ -3050,12 +3058,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>59f8e68f18ea89.65271868</argument>
+      <argument>59fc212b667521.18956543</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>59f8e68f18ea89.65271868</argument>
+      <argument>59fc212b667521.18956543</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -3718,7 +3726,7 @@
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
         <argument key="host">127.0.0.1</argument>
-        <argument key="port">3306</argument>
+        <argument key="port">8080</argument>
         <argument key="dbname">raum_reservierung</argument>
         <argument key="user">root</argument>
         <argument key="password">null</argument>
@@ -4530,7 +4538,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>2iybWDHMB3</argument>
       <argument>0</argument>
-      <argument>A8QTOWMyRdaeOF64mieSVt</argument>
+      <argument>GH0F+pKyc3x9x3yDsnSd4+</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4538,7 +4546,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>9Haz2FhdSs</argument>
       <argument>0</argument>
-      <argument>A8QTOWMyRdaeOF64mieSVt</argument>
+      <argument>GH0F+pKyc3x9x3yDsnSd4+</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4546,7 +4554,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>SSCmdOesLF</argument>
       <argument>0</argument>
-      <argument>A8QTOWMyRdaeOF64mieSVt</argument>
+      <argument>GH0F+pKyc3x9x3yDsnSd4+</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4554,7 +4562,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>FaPl4+uJOa</argument>
       <argument>0</argument>
-      <argument>A8QTOWMyRdaeOF64mieSVt</argument>
+      <argument>GH0F+pKyc3x9x3yDsnSd4+</argument>
       <argument>/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

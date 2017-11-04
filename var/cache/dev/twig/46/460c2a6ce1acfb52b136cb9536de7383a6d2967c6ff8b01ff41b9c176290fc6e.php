@@ -21,29 +21,29 @@ class __TwigTemplate_dc6382425bdce3b4204d90d489c970a938bf0791c4439bd7dfc166718ff
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_367bdc46b0fdca1e2edc3b40df1ea55471febdd99fd9673fa2a0b41ada4bbf3e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_367bdc46b0fdca1e2edc3b40df1ea55471febdd99fd9673fa2a0b41ada4bbf3e->enter($__internal_367bdc46b0fdca1e2edc3b40df1ea55471febdd99fd9673fa2a0b41ada4bbf3e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:index.html.twig"));
+        $__internal_b5b5bb9ee9f6007df4c0333d3c50761f4ef2ea14050debe6613ada58090109ca = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b5b5bb9ee9f6007df4c0333d3c50761f4ef2ea14050debe6613ada58090109ca->enter($__internal_b5b5bb9ee9f6007df4c0333d3c50761f4ef2ea14050debe6613ada58090109ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:index.html.twig"));
 
-        $__internal_0925abed281f57e17da4f158fdb0ad0e9cb3e3d39131c1049b78d1a9947b3586 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0925abed281f57e17da4f158fdb0ad0e9cb3e3d39131c1049b78d1a9947b3586->enter($__internal_0925abed281f57e17da4f158fdb0ad0e9cb3e3d39131c1049b78d1a9947b3586_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:index.html.twig"));
+        $__internal_c1e546dab8d7bfbee5083f2b894a5ec4dd79f9624e37745db93eff90069b3709 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c1e546dab8d7bfbee5083f2b894a5ec4dd79f9624e37745db93eff90069b3709->enter($__internal_c1e546dab8d7bfbee5083f2b894a5ec4dd79f9624e37745db93eff90069b3709_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_367bdc46b0fdca1e2edc3b40df1ea55471febdd99fd9673fa2a0b41ada4bbf3e->leave($__internal_367bdc46b0fdca1e2edc3b40df1ea55471febdd99fd9673fa2a0b41ada4bbf3e_prof);
+        $__internal_b5b5bb9ee9f6007df4c0333d3c50761f4ef2ea14050debe6613ada58090109ca->leave($__internal_b5b5bb9ee9f6007df4c0333d3c50761f4ef2ea14050debe6613ada58090109ca_prof);
 
         
-        $__internal_0925abed281f57e17da4f158fdb0ad0e9cb3e3d39131c1049b78d1a9947b3586->leave($__internal_0925abed281f57e17da4f158fdb0ad0e9cb3e3d39131c1049b78d1a9947b3586_prof);
+        $__internal_c1e546dab8d7bfbee5083f2b894a5ec4dd79f9624e37745db93eff90069b3709->leave($__internal_c1e546dab8d7bfbee5083f2b894a5ec4dd79f9624e37745db93eff90069b3709_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_32b985e84663e9e583fc85e528143bd5342721ed622168efcdee9950d9af6c88 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_32b985e84663e9e583fc85e528143bd5342721ed622168efcdee9950d9af6c88->enter($__internal_32b985e84663e9e583fc85e528143bd5342721ed622168efcdee9950d9af6c88_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_997271a9eb8297bbfbdbbf02bba6b9e16be51dbce4462242a180c57b7dd499fb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_997271a9eb8297bbfbdbbf02bba6b9e16be51dbce4462242a180c57b7dd499fb->enter($__internal_997271a9eb8297bbfbdbbf02bba6b9e16be51dbce4462242a180c57b7dd499fb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_c20165130f77a6d367ca6c3e4e210a188306e6aabafc1dadf0cfe2a638c227f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c20165130f77a6d367ca6c3e4e210a188306e6aabafc1dadf0cfe2a638c227f2->enter($__internal_c20165130f77a6d367ca6c3e4e210a188306e6aabafc1dadf0cfe2a638c227f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_df40eedc0e8a2c85a0f49cd9c50eacd4d47627276f8cc32bb669b82635596997 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_df40eedc0e8a2c85a0f49cd9c50eacd4d47627276f8cc32bb669b82635596997->enter($__internal_df40eedc0e8a2c85a0f49cd9c50eacd4d47627276f8cc32bb669b82635596997_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "  <div class=\"jumbotron\">
@@ -77,29 +77,27 @@ Erstellt von:
 Hubert Tegang, Raissa Tchounga, Marie Kouadjane, Josefa Pagui.<br><br>
 
         </div>
-
         <div class=\"col-lg-6 col-lg-offset-1\">
-
           <section id=\"categorie\">
             ";
-        // line 38
+        // line 36
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["gebaeude"]) ? $context["gebaeude"] : $this->getContext($context, "gebaeude")));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 39
+            // line 37
             echo "              <div class=\"gallery\">
                 <a href=\"";
-            // line 40
+            // line 38
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("h_zraum_reservierung_gebaeudeRaum", array("gebaeude" => $this->getAttribute($context["item"], "id", array()), "name" => $this->getAttribute($context["item"], "name", array()))), "html", null, true);
             echo "\">
                   <img src=\"";
-            // line 41
+            // line 39
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl($this->getAttribute($this->getAttribute($context["item"], "image", array()), "webPath", array())), "html", null, true);
             echo "\">
                 </a>
                 <div class=\"desc\">
                   ";
-            // line 44
+            // line 42
             echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "name", array()), "html", null, true);
             echo "
                 </div>
@@ -109,7 +107,7 @@ Hubert Tegang, Raissa Tchounga, Marie Kouadjane, Josefa Pagui.<br><br>
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 46
         echo "          </section>
         </div>
       </div>
@@ -118,10 +116,10 @@ Hubert Tegang, Raissa Tchounga, Marie Kouadjane, Josefa Pagui.<br><br>
   <br>
 ";
         
-        $__internal_c20165130f77a6d367ca6c3e4e210a188306e6aabafc1dadf0cfe2a638c227f2->leave($__internal_c20165130f77a6d367ca6c3e4e210a188306e6aabafc1dadf0cfe2a638c227f2_prof);
+        $__internal_df40eedc0e8a2c85a0f49cd9c50eacd4d47627276f8cc32bb669b82635596997->leave($__internal_df40eedc0e8a2c85a0f49cd9c50eacd4d47627276f8cc32bb669b82635596997_prof);
 
         
-        $__internal_32b985e84663e9e583fc85e528143bd5342721ed622168efcdee9950d9af6c88->leave($__internal_32b985e84663e9e583fc85e528143bd5342721ed622168efcdee9950d9af6c88_prof);
+        $__internal_997271a9eb8297bbfbdbbf02bba6b9e16be51dbce4462242a180c57b7dd499fb->leave($__internal_997271a9eb8297bbfbdbbf02bba6b9e16be51dbce4462242a180c57b7dd499fb_prof);
 
     }
 
@@ -137,7 +135,7 @@ Hubert Tegang, Raissa Tchounga, Marie Kouadjane, Josefa Pagui.<br><br>
 
     public function getDebugInfo()
     {
-        return array (  113 => 48,  103 => 44,  97 => 41,  93 => 40,  90 => 39,  86 => 38,  49 => 3,  40 => 2,  11 => 1,);
+        return array (  111 => 46,  101 => 42,  95 => 39,  91 => 38,  88 => 37,  84 => 36,  49 => 3,  40 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -183,9 +181,7 @@ Erstellt von:
 Hubert Tegang, Raissa Tchounga, Marie Kouadjane, Josefa Pagui.<br><br>
 
         </div>
-
         <div class=\"col-lg-6 col-lg-offset-1\">
-
           <section id=\"categorie\">
             {% for item in gebaeude %}
               <div class=\"gallery\">

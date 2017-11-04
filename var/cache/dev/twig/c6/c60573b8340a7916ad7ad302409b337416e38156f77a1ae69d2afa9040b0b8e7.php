@@ -21,29 +21,29 @@ class __TwigTemplate_8ab17b5daa5d1c597cfc61e7062b72107bcb8cb1c39c616a68a6e581823
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5eee403dc6a1ca7e94784df426fcfeda306704292bdd1901430ffd5f40cb67a1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5eee403dc6a1ca7e94784df426fcfeda306704292bdd1901430ffd5f40cb67a1->enter($__internal_5eee403dc6a1ca7e94784df426fcfeda306704292bdd1901430ffd5f40cb67a1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:raumInfos.html.twig"));
+        $__internal_bc41765990320b31a8698548972d023d8d574f332e4eaa4f5604c20e55f021d9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_bc41765990320b31a8698548972d023d8d574f332e4eaa4f5604c20e55f021d9->enter($__internal_bc41765990320b31a8698548972d023d8d574f332e4eaa4f5604c20e55f021d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:raumInfos.html.twig"));
 
-        $__internal_2c7b01595b5639b594229c6c10b5738b8e1958bfe37a2b264e5d28febce04389 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2c7b01595b5639b594229c6c10b5738b8e1958bfe37a2b264e5d28febce04389->enter($__internal_2c7b01595b5639b594229c6c10b5738b8e1958bfe37a2b264e5d28febce04389_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:raumInfos.html.twig"));
+        $__internal_cb0a589b94e8ec18596f61018fbffa1ab2cb901c2b436328b656726858612589 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cb0a589b94e8ec18596f61018fbffa1ab2cb901c2b436328b656726858612589->enter($__internal_cb0a589b94e8ec18596f61018fbffa1ab2cb901c2b436328b656726858612589_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:raumInfos.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_5eee403dc6a1ca7e94784df426fcfeda306704292bdd1901430ffd5f40cb67a1->leave($__internal_5eee403dc6a1ca7e94784df426fcfeda306704292bdd1901430ffd5f40cb67a1_prof);
+        $__internal_bc41765990320b31a8698548972d023d8d574f332e4eaa4f5604c20e55f021d9->leave($__internal_bc41765990320b31a8698548972d023d8d574f332e4eaa4f5604c20e55f021d9_prof);
 
         
-        $__internal_2c7b01595b5639b594229c6c10b5738b8e1958bfe37a2b264e5d28febce04389->leave($__internal_2c7b01595b5639b594229c6c10b5738b8e1958bfe37a2b264e5d28febce04389_prof);
+        $__internal_cb0a589b94e8ec18596f61018fbffa1ab2cb901c2b436328b656726858612589->leave($__internal_cb0a589b94e8ec18596f61018fbffa1ab2cb901c2b436328b656726858612589_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_794e11b506c3a4a68936c01c1ef528265b148c2372740a4d6a444cf52163e376 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_794e11b506c3a4a68936c01c1ef528265b148c2372740a4d6a444cf52163e376->enter($__internal_794e11b506c3a4a68936c01c1ef528265b148c2372740a4d6a444cf52163e376_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c55eec5bd2c1bf6dc846983c55c7d7b5f9d55c4cb95873f0203ec8c489c62215 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c55eec5bd2c1bf6dc846983c55c7d7b5f9d55c4cb95873f0203ec8c489c62215->enter($__internal_c55eec5bd2c1bf6dc846983c55c7d7b5f9d55c4cb95873f0203ec8c489c62215_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_62f49230bdf653202e9bfb7d67f26872be01316b1e82e172f7c110f368397435 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_62f49230bdf653202e9bfb7d67f26872be01316b1e82e172f7c110f368397435->enter($__internal_62f49230bdf653202e9bfb7d67f26872be01316b1e82e172f7c110f368397435_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e34c268cf927f44a477495929ed3a63e8e81da07c79a55875a84a1a71411cde4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e34c268cf927f44a477495929ed3a63e8e81da07c79a55875a84a1a71411cde4->enter($__internal_e34c268cf927f44a477495929ed3a63e8e81da07c79a55875a84a1a71411cde4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "  <br><br><br><br><br><br>
@@ -104,7 +104,7 @@ class __TwigTemplate_8ab17b5daa5d1c597cfc61e7062b72107bcb8cb1c39c616a68a6e581823
 </div>
 <br>
 <div class=\"weiterButton\">
-  
+
   <a href=\"";
         // line 45
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("h_zraum_reservierung_reservierung", array("raumId" => $this->getAttribute((isset($context["infos"]) ? $context["infos"] : $this->getContext($context, "infos")), "id", array()), "raumFrei" => $this->getAttribute((isset($context["infos"]) ? $context["infos"] : $this->getContext($context, "infos")), "frei", array()))), "html", null, true);
@@ -115,10 +115,10 @@ class __TwigTemplate_8ab17b5daa5d1c597cfc61e7062b72107bcb8cb1c39c616a68a6e581823
 <br>
 ";
         
-        $__internal_62f49230bdf653202e9bfb7d67f26872be01316b1e82e172f7c110f368397435->leave($__internal_62f49230bdf653202e9bfb7d67f26872be01316b1e82e172f7c110f368397435_prof);
+        $__internal_e34c268cf927f44a477495929ed3a63e8e81da07c79a55875a84a1a71411cde4->leave($__internal_e34c268cf927f44a477495929ed3a63e8e81da07c79a55875a84a1a71411cde4_prof);
 
         
-        $__internal_794e11b506c3a4a68936c01c1ef528265b148c2372740a4d6a444cf52163e376->leave($__internal_794e11b506c3a4a68936c01c1ef528265b148c2372740a4d6a444cf52163e376_prof);
+        $__internal_c55eec5bd2c1bf6dc846983c55c7d7b5f9d55c4cb95873f0203ec8c489c62215->leave($__internal_c55eec5bd2c1bf6dc846983c55c7d7b5f9d55c4cb95873f0203ec8c489c62215_prof);
 
     }
 
@@ -190,7 +190,7 @@ class __TwigTemplate_8ab17b5daa5d1c597cfc61e7062b72107bcb8cb1c39c616a68a6e581823
 </div>
 <br>
 <div class=\"weiterButton\">
-  
+
   <a href=\"{{ path('h_zraum_reservierung_reservierung',{'raumId': infos.id, 'raumFrei': infos.frei}) }}\">
 
   <button class=\"mdl-button mdl-js-button mdl-button--raised\" type=\"button\" name=\"button\">Weiter</button></a>

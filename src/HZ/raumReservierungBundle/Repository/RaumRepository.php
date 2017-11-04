@@ -37,5 +37,4 @@ public function studentRaumByGebaeude($gebaeude){
       ->getResult()
     ;
 }
-
 }

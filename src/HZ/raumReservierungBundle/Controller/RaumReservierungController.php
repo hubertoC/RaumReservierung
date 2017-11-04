@@ -62,12 +62,12 @@ $count = 0;
               $count++;
               $flashBag = $this->get('session')->getFlashBag();
               $flashBag->get('user-notice'); // gets message and clears type
-              $flashBag->set('user-notice', '!! Donnees non Valide!!');
+              $flashBag->set('user-notice', '!! Ungültige Dateneingabe!!');
             }
             $count++;
             $flashBag = $this->get('session')->getFlashBag();
             $flashBag->get('user-notice'); // gets message and clears type
-            $flashBag->set('user-notice', '!! Pas de Reservation libre pour cette date!!');
+            $flashBag->set('user-notice', '!! keine Reservierung möglich für dieses Datum!!');
           }
         }
         if(!$count){
@@ -79,8 +79,24 @@ $count = 0;
         }
       }
 
-      return $this->render('HZraumReservierungBundle:RaumHtml:reservierung.html.twig', array('raumId' => $raumId, 'raumFrei' => $raumFrei,   'reservierung' => $reservierung,
-        'form' => $form->createView(), 'reservationDate' => $reservationDate,));
+
+      $em = $this->getDoctrine()->getManager();
+
+      $reservationDate = $em->getRepository('HZraumReservierungBundle:Reservierung')->dateCompare($raumId);
+      $datesArray = [];
+      foreach ($reservationDate as $key => $date) {
+        $datesArray[$key] = $date->toArray();
+      }
+
+      return $this->render('HZraumReservierungBundle:RaumHtml:reservierung.html.twig',
+      array(
+          'raumId' => $raumId,
+          'raumFrei' => $raumFrei,
+          'reservierung' => $reservierung,
+          'form' => $form->createView(),
+          'reservationDate' => $reservationDate,
+          'dates' => json_encode($datesArray)
+        ));
 
     }
 
@@ -97,7 +113,7 @@ $count = 0;
                   $em->flush();
       $flashBag = $this->get('session')->getFlashBag();
       $flashBag->get('user-notice'); // gets message and clears type
-      $flashBag->set('user-notice', '!! Nous vous remercions !!');
+      $flashBag->set('user-notice', '!! Wir danken Ihnen !!');
       return $this->redirectToRoute('h_zraum_reservierung_homepage');
     }
       return $this->render('HZraumReservierungBundle:RaumHtml:kontakt.html.twig', array('form'=>$form->createView()));
@@ -107,13 +123,19 @@ $count = 0;
     public function searchAction($raumId)
 {
   $em = $this->getDoctrine()->getManager();
-  $reservationDate = $em->getRepository('HZraumReservierungBundle:Reservierung')->dateCompare($raumId);
-   $response = new Response(json_encode($reservationDate));
-   $response->headers->set('Content-Type', 'application/json');
 
-   var_dump($response);
-die();
-   return $response;
+  $reservationDate = $em->getRepository('HZraumReservierungBundle:Reservierung')->dateCompare($raumId);
+$datesArray = [];
+foreach ($reservationDate as $key => $date) {
+  $datesArray[$key] = $date->toArray();
+}
+
+   $response = new JsonResponse($datesArray);
+   //$response->headers->set('Content-Type', 'application/json');
+
+  //var_dump($reservationDate[0]->getArray());
+//die();
+   return  $response;
 
 }
 }

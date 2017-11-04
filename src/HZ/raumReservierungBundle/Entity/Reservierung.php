@@ -12,6 +12,29 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Reservierung
 {
+
+public function toArray() {
+    $methods = get_class_methods('\HZ\raumReservierungBundle\Entity\Reservierung');
+    $data = [];
+    foreach($methods as $method) {
+      if(strpos($method, 'get') !== false) {
+          $key = strtolower(str_replace('get','',$method));
+          if($this->$method() instanceof \DateTime) {
+            $data[$key] = $this->$method()->format('Y-m-d H:i:s');
+          } else {
+            $data[$key] = $this->$method();
+          }
+
+      }
+
+        //$
+    };
+return $data;
+  return [
+    'id' => $this->id
+  ];
+}
+
     /**
      * @var int
      *
@@ -73,7 +96,7 @@ class Reservierung
         return $this->id;
     }
 
-  
+
 
 
 

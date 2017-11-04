@@ -1,0 +1,60 @@
+{% extends 'layoutAdmin.html.twig' %}
+
+{% block body %}
+  <h1>Reservierungadmins list</h1>
+
+  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Title</th>
+        <th>Url</th>
+        <th>Classname</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for reservierungAdmin in reservierungAdmins %}
+        <tr>
+          <td>
+            <a href="{{ path('admin_reservierungadmin_show', { 'id': reservierungAdmin.id }) }}">{{ reservierungAdmin.id }}</a>
+          </td>
+          <td>
+            {% if reservierungAdmin.start %}{{ reservierungAdmin.start|date('Y-m-d H:i:s') }}{% endif %}
+          </td>
+          <td>
+            {% if reservierungAdmin.end %}{{ reservierungAdmin.end|date('Y-m-d H:i:s') }}{% endif %}
+          </td>
+          <td>{{ reservierungAdmin.title }}</td>
+          <td>{{ reservierungAdmin.url }}</td>
+          <td>{{ reservierungAdmin.className }}</td>
+          <td>
+            <ul>
+              <li>
+                <a href="{{ path('admin_reservierungadmin_show', { 'id': reservierungAdmin.id }) }}">
+                  <i class="glyphicon glyphicon-info-sign"></i>
+                </a>
+              </li>
+              <li>
+                <a href="{{ path('admin_reservierungadmin_edit', { 'id': reservierungAdmin.id }) }}">
+                  <i class="glyphicon glyphicon-pencil"></i>
+                </a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <ul>
+    <div class="cration_artiste">
+      <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('admin_reservierungadmin_new') }}">Neue Reservierung erfassen<i class="glyphicon glyphicon-plus"></i>
+      </a>
+    </div>
+  </li>
+</ul>
+
+{% endblock %}

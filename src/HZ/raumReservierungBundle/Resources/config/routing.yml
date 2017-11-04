@@ -19,8 +19,9 @@ h_zraum_reservierung_adminGebaeude:
         resource: "@HZraumReservierungBundle/Resources/config/routing/gebaeude.yml"
         prefix:   admin/adminGebaeude
 
-
-
+h_zraum_reservierung_admin_reservierungadmin:
+        resource: "@HZraumReservierungBundle/Resources/config/routing/reservierungadmin.yml"
+        prefix:   /admin/reservierungadmin
 
 
 

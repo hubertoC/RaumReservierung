@@ -21,35 +21,35 @@ class __TwigTemplate_dc61a72e554e5343ac3945030c0fcfec925cc70e8f4cec2b12b4897cc9e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1b35b75fbb6f759189b7b6f42113ee0010cfd15642d91e31a73bbddedd6efcc7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1b35b75fbb6f759189b7b6f42113ee0010cfd15642d91e31a73bbddedd6efcc7->enter($__internal_1b35b75fbb6f759189b7b6f42113ee0010cfd15642d91e31a73bbddedd6efcc7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:reservierung.html.twig"));
+        $__internal_b425d6b518c37aa44f74f2a0bd511b7c1058eafe05e09827a7684eeb6b7a0cf8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b425d6b518c37aa44f74f2a0bd511b7c1058eafe05e09827a7684eeb6b7a0cf8->enter($__internal_b425d6b518c37aa44f74f2a0bd511b7c1058eafe05e09827a7684eeb6b7a0cf8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:reservierung.html.twig"));
 
-        $__internal_a01761b0810618b5129a9763f23d35ace76a451814ba28188308efd7463df923 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a01761b0810618b5129a9763f23d35ace76a451814ba28188308efd7463df923->enter($__internal_a01761b0810618b5129a9763f23d35ace76a451814ba28188308efd7463df923_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:reservierung.html.twig"));
+        $__internal_7011ba34103d4c89f02697f8da367755eeedb307c1685d61a5afaade8523681d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7011ba34103d4c89f02697f8da367755eeedb307c1685d61a5afaade8523681d->enter($__internal_7011ba34103d4c89f02697f8da367755eeedb307c1685d61a5afaade8523681d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:reservierung.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_1b35b75fbb6f759189b7b6f42113ee0010cfd15642d91e31a73bbddedd6efcc7->leave($__internal_1b35b75fbb6f759189b7b6f42113ee0010cfd15642d91e31a73bbddedd6efcc7_prof);
+        $__internal_b425d6b518c37aa44f74f2a0bd511b7c1058eafe05e09827a7684eeb6b7a0cf8->leave($__internal_b425d6b518c37aa44f74f2a0bd511b7c1058eafe05e09827a7684eeb6b7a0cf8_prof);
 
         
-        $__internal_a01761b0810618b5129a9763f23d35ace76a451814ba28188308efd7463df923->leave($__internal_a01761b0810618b5129a9763f23d35ace76a451814ba28188308efd7463df923_prof);
+        $__internal_7011ba34103d4c89f02697f8da367755eeedb307c1685d61a5afaade8523681d->leave($__internal_7011ba34103d4c89f02697f8da367755eeedb307c1685d61a5afaade8523681d_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_39cbbafdba5e38ed1bb6d560e2ee56dbd42d96cd691769453380e7892bb06bdc = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_39cbbafdba5e38ed1bb6d560e2ee56dbd42d96cd691769453380e7892bb06bdc->enter($__internal_39cbbafdba5e38ed1bb6d560e2ee56dbd42d96cd691769453380e7892bb06bdc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7f9e25a9c93f784ae3006323ebfca3e54a2d840363c80d8fd8182aaee72d8960 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7f9e25a9c93f784ae3006323ebfca3e54a2d840363c80d8fd8182aaee72d8960->enter($__internal_7f9e25a9c93f784ae3006323ebfca3e54a2d840363c80d8fd8182aaee72d8960_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_dc6e550bb7e2866592c286ce38340681f897d5688342fe2cbf5ba776fd6c2fd0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dc6e550bb7e2866592c286ce38340681f897d5688342fe2cbf5ba776fd6c2fd0->enter($__internal_dc6e550bb7e2866592c286ce38340681f897d5688342fe2cbf5ba776fd6c2fd0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_36d3c4960bb1ef2a0007c49037833694b9b5813673957af9649bd2d89fb50c0f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_36d3c4960bb1ef2a0007c49037833694b9b5813673957af9649bd2d89fb50c0f->enter($__internal_36d3c4960bb1ef2a0007c49037833694b9b5813673957af9649bd2d89fb50c0f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "
   <style media=\"screen\">
     .Disponible {
-      background-color: red;
+      background-color: green;
       color: #FFF;
       border-radius: 0.1em;
       border-color: #000;
@@ -200,19 +200,17 @@ class __TwigTemplate_dc61a72e554e5343ac3945030c0fcfec925cc70e8f4cec2b12b4897cc9e
         // line 99
         echo "
   <script type=\"text/javascript\">
-  
+
     \$(document).ready(function() {
       \$('#calendar').fullCalendar({
         header: {
           center: 'agendaWeek'
+
         },
-        events: {
-            url: \"";
+        events: ";
         // line 108
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("h_zraum_reservierung_search", array("raumId" => (isset($context["raumId"]) ? $context["raumId"] : $this->getContext($context, "raumId")))), "html", null, true);
-        echo "\",
-            console.console.log();
-        }
+        echo (isset($context["dates"]) ? $context["dates"] : $this->getContext($context, "dates"));
+        echo "
 
       })
 
@@ -221,10 +219,10 @@ class __TwigTemplate_dc61a72e554e5343ac3945030c0fcfec925cc70e8f4cec2b12b4897cc9e
 
 ";
         
-        $__internal_dc6e550bb7e2866592c286ce38340681f897d5688342fe2cbf5ba776fd6c2fd0->leave($__internal_dc6e550bb7e2866592c286ce38340681f897d5688342fe2cbf5ba776fd6c2fd0_prof);
+        $__internal_36d3c4960bb1ef2a0007c49037833694b9b5813673957af9649bd2d89fb50c0f->leave($__internal_36d3c4960bb1ef2a0007c49037833694b9b5813673957af9649bd2d89fb50c0f_prof);
 
         
-        $__internal_39cbbafdba5e38ed1bb6d560e2ee56dbd42d96cd691769453380e7892bb06bdc->leave($__internal_39cbbafdba5e38ed1bb6d560e2ee56dbd42d96cd691769453380e7892bb06bdc_prof);
+        $__internal_7f9e25a9c93f784ae3006323ebfca3e54a2d840363c80d8fd8182aaee72d8960->leave($__internal_7f9e25a9c93f784ae3006323ebfca3e54a2d840363c80d8fd8182aaee72d8960_prof);
 
     }
 
@@ -258,7 +256,7 @@ class __TwigTemplate_dc61a72e554e5343ac3945030c0fcfec925cc70e8f4cec2b12b4897cc9e
 
   <style media=\"screen\">
     .Disponible {
-      background-color: red;
+      background-color: green;
       color: #FFF;
       border-radius: 0.1em;
       border-color: #000;
@@ -353,16 +351,14 @@ class __TwigTemplate_dc61a72e554e5343ac3945030c0fcfec925cc70e8f4cec2b12b4897cc9e
   {% endif %}
 
   <script type=\"text/javascript\">
-  
+
     \$(document).ready(function() {
       \$('#calendar').fullCalendar({
         header: {
           center: 'agendaWeek'
+
         },
-        events: {
-            url: \"{{ path('h_zraum_reservierung_search', {'raumId':raumId})}}\",
-            console.console.log();
-        }
+        events: {{dates|raw}}
 
       })
 

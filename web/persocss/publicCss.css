@@ -460,7 +460,7 @@ input, select, textarea {
 .rectangleReserver{
 	width:60px;
 	height:25px;
-	background: red;
+	background: #3E87AB;
   margin-left: 2em;
 }
 .rectangleReserver span{
@@ -471,7 +471,7 @@ input, select, textarea {
 .rectangleFrei{
 	width:60px;
 	height:25px;
-	background: green;
+	background: #FFF;
   margin-left: 2em;
 }
 .rectangleFrei span{
@@ -486,13 +486,18 @@ input, select, textarea {
   margin: 2.5em;
   font-size: 2em;
 }
-#hz_raumreservierungbundle_reservierung_endDatum_date{
+#hz_raumreservierungbundle_reservierung_start #hz_raumreservierungbundle_reservierung_start_date{
   float: left;
-  margin-right: 2em;
 }
-#hz_raumreservierungbundle_reservierung_startDatum_date{
+#hz_raumreservierungbundle_reservierung_start_date{
+  margin-right: 3em;
+}
+
+#hz_raumreservierungbundle_reservierung_end #hz_raumreservierungbundle_reservierung_end_date{
   float: left;
-  margin-right: 2em;
+}
+#hz_raumreservierungbundle_reservierung_end_date{
+  margin-right: 3em;
 }
 
 .catName{
@@ -510,6 +515,10 @@ input, select, textarea {
 
 .confirmation{
   color: green;
+}
+.confirmation span{
+  color: #ffff00;
+  font-size: 3em;
 }
 
 }

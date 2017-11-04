@@ -21,47 +21,47 @@ class __TwigTemplate_d511bbf2be922aadbf93c3d6dd4775cca70b4961295dd8e492adb97362a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_502e2a1fab7c47b95e264d29f6f70c0780ee0c7dcce86d031b4128b2f89a889d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_502e2a1fab7c47b95e264d29f6f70c0780ee0c7dcce86d031b4128b2f89a889d->enter($__internal_502e2a1fab7c47b95e264d29f6f70c0780ee0c7dcce86d031b4128b2f89a889d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:confirmation.html.twig"));
+        $__internal_23e8fe2366a45c885f5cd625c1324308c8869bef7cf5cac1d9ae5d90c80fd7a5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_23e8fe2366a45c885f5cd625c1324308c8869bef7cf5cac1d9ae5d90c80fd7a5->enter($__internal_23e8fe2366a45c885f5cd625c1324308c8869bef7cf5cac1d9ae5d90c80fd7a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:confirmation.html.twig"));
 
-        $__internal_a84f14f63ecf6dc39ec981f85eba5301e7f38e0f48de3667a84f27c4e9a8aee1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a84f14f63ecf6dc39ec981f85eba5301e7f38e0f48de3667a84f27c4e9a8aee1->enter($__internal_a84f14f63ecf6dc39ec981f85eba5301e7f38e0f48de3667a84f27c4e9a8aee1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:confirmation.html.twig"));
+        $__internal_cc97941ea1fc9f8aa18567de3b37ce924f00d55fa32bce3f03b4ab575c07f93b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cc97941ea1fc9f8aa18567de3b37ce924f00d55fa32bce3f03b4ab575c07f93b->enter($__internal_cc97941ea1fc9f8aa18567de3b37ce924f00d55fa32bce3f03b4ab575c07f93b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "HZraumReservierungBundle:RaumHtml:confirmation.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_502e2a1fab7c47b95e264d29f6f70c0780ee0c7dcce86d031b4128b2f89a889d->leave($__internal_502e2a1fab7c47b95e264d29f6f70c0780ee0c7dcce86d031b4128b2f89a889d_prof);
+        $__internal_23e8fe2366a45c885f5cd625c1324308c8869bef7cf5cac1d9ae5d90c80fd7a5->leave($__internal_23e8fe2366a45c885f5cd625c1324308c8869bef7cf5cac1d9ae5d90c80fd7a5_prof);
 
         
-        $__internal_a84f14f63ecf6dc39ec981f85eba5301e7f38e0f48de3667a84f27c4e9a8aee1->leave($__internal_a84f14f63ecf6dc39ec981f85eba5301e7f38e0f48de3667a84f27c4e9a8aee1_prof);
+        $__internal_cc97941ea1fc9f8aa18567de3b37ce924f00d55fa32bce3f03b4ab575c07f93b->leave($__internal_cc97941ea1fc9f8aa18567de3b37ce924f00d55fa32bce3f03b4ab575c07f93b_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_6043c8fe222a96ec7707b2cee1306f6f890d8e6f6ebc7306f742f8b59d1e1256 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6043c8fe222a96ec7707b2cee1306f6f890d8e6f6ebc7306f742f8b59d1e1256->enter($__internal_6043c8fe222a96ec7707b2cee1306f6f890d8e6f6ebc7306f742f8b59d1e1256_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_aae5fb5bc37c6d89c975c93b8bd4bc507db86d3d0304a0d4e2edfbbc2f8c40d2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_aae5fb5bc37c6d89c975c93b8bd4bc507db86d3d0304a0d4e2edfbbc2f8c40d2->enter($__internal_aae5fb5bc37c6d89c975c93b8bd4bc507db86d3d0304a0d4e2edfbbc2f8c40d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_085d4f259763abeaff918316891ebabcd7cddd8377d3aa99f7dade8a83eb75d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_085d4f259763abeaff918316891ebabcd7cddd8377d3aa99f7dade8a83eb75d8->enter($__internal_085d4f259763abeaff918316891ebabcd7cddd8377d3aa99f7dade8a83eb75d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_add76377f5927a31efbede139a995a0baa582e0a1784c1023468dcfede2b2022 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_add76377f5927a31efbede139a995a0baa582e0a1784c1023468dcfede2b2022->enter($__internal_add76377f5927a31efbede139a995a0baa582e0a1784c1023468dcfede2b2022_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "<div class=\"\">
 
 </div>
 <div class=\"jumbotron confirmation\">
-  <h1>  Ihre Reservierung war Erfolgreich!!!</h1>
-    <h2>hiermit finden sie Ihre Pin Nummer: ";
+  <h1>  Ihre Reservierung war Erfolgreich!!!</h1><br>
+    <h2>hiermit finden sie Ihre Pin Nummer: <span>";
         // line 8
         echo twig_escape_filter($this->env, (isset($context["random"]) ? $context["random"] : $this->getContext($context, "random")), "html", null, true);
-        echo "</h2>
+        echo "</span> </h2>
 </div>
 ";
         
-        $__internal_085d4f259763abeaff918316891ebabcd7cddd8377d3aa99f7dade8a83eb75d8->leave($__internal_085d4f259763abeaff918316891ebabcd7cddd8377d3aa99f7dade8a83eb75d8_prof);
+        $__internal_add76377f5927a31efbede139a995a0baa582e0a1784c1023468dcfede2b2022->leave($__internal_add76377f5927a31efbede139a995a0baa582e0a1784c1023468dcfede2b2022_prof);
 
         
-        $__internal_6043c8fe222a96ec7707b2cee1306f6f890d8e6f6ebc7306f742f8b59d1e1256->leave($__internal_6043c8fe222a96ec7707b2cee1306f6f890d8e6f6ebc7306f742f8b59d1e1256_prof);
+        $__internal_aae5fb5bc37c6d89c975c93b8bd4bc507db86d3d0304a0d4e2edfbbc2f8c40d2->leave($__internal_aae5fb5bc37c6d89c975c93b8bd4bc507db86d3d0304a0d4e2edfbbc2f8c40d2_prof);
 
     }
 
@@ -96,8 +96,8 @@ class __TwigTemplate_d511bbf2be922aadbf93c3d6dd4775cca70b4961295dd8e492adb97362a
 
 </div>
 <div class=\"jumbotron confirmation\">
-  <h1>  Ihre Reservierung war Erfolgreich!!!</h1>
-    <h2>hiermit finden sie Ihre Pin Nummer: {{random}}</h2>
+  <h1>  Ihre Reservierung war Erfolgreich!!!</h1><br>
+    <h2>hiermit finden sie Ihre Pin Nummer: <span>{{random}}</span> </h2>
 </div>
 {% endblock %}
 ", "HZraumReservierungBundle:RaumHtml:confirmation.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/src/HZ/raumReservierungBundle/Resources/views/RaumHtml/confirmation.html.twig");

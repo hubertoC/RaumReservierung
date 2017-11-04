@@ -1,6 +1,6 @@
 <?php
 
-/* :reservierung:new.html.twig */
+/* reservierung/new.html.twig */
 class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa450895911837425 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("layoutAdmin.html.twig", ":reservierung:new.html.twig", 1);
+        $this->parent = $this->loadTemplate("layoutAdmin.html.twig", "reservierung/new.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -21,29 +21,29 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_90df0f12002dade1418c4c92c55d9b8b9f1cd113b6f544cd8d2995d3336c7902 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_90df0f12002dade1418c4c92c55d9b8b9f1cd113b6f544cd8d2995d3336c7902->enter($__internal_90df0f12002dade1418c4c92c55d9b8b9f1cd113b6f544cd8d2995d3336c7902_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":reservierung:new.html.twig"));
+        $__internal_fb48855e0228dafb0c4be164db3193a3ac20d0496d07673a8cc2e361c267209c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fb48855e0228dafb0c4be164db3193a3ac20d0496d07673a8cc2e361c267209c->enter($__internal_fb48855e0228dafb0c4be164db3193a3ac20d0496d07673a8cc2e361c267209c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservierung/new.html.twig"));
 
-        $__internal_9a3adf99b4b66ab6194b0627b02fc8092044ec856fbf09d6e48335b1931f2a02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9a3adf99b4b66ab6194b0627b02fc8092044ec856fbf09d6e48335b1931f2a02->enter($__internal_9a3adf99b4b66ab6194b0627b02fc8092044ec856fbf09d6e48335b1931f2a02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":reservierung:new.html.twig"));
+        $__internal_2623a6008103636289025a6786bad06a6668bf520e80081fecfe3a444c390258 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2623a6008103636289025a6786bad06a6668bf520e80081fecfe3a444c390258->enter($__internal_2623a6008103636289025a6786bad06a6668bf520e80081fecfe3a444c390258_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservierung/new.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_90df0f12002dade1418c4c92c55d9b8b9f1cd113b6f544cd8d2995d3336c7902->leave($__internal_90df0f12002dade1418c4c92c55d9b8b9f1cd113b6f544cd8d2995d3336c7902_prof);
+        $__internal_fb48855e0228dafb0c4be164db3193a3ac20d0496d07673a8cc2e361c267209c->leave($__internal_fb48855e0228dafb0c4be164db3193a3ac20d0496d07673a8cc2e361c267209c_prof);
 
         
-        $__internal_9a3adf99b4b66ab6194b0627b02fc8092044ec856fbf09d6e48335b1931f2a02->leave($__internal_9a3adf99b4b66ab6194b0627b02fc8092044ec856fbf09d6e48335b1931f2a02_prof);
+        $__internal_2623a6008103636289025a6786bad06a6668bf520e80081fecfe3a444c390258->leave($__internal_2623a6008103636289025a6786bad06a6668bf520e80081fecfe3a444c390258_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_97895aaa6d1f76eccfb5d3271bf8ee1fd5d6dec0ca8c40269ecadea94224d181 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_97895aaa6d1f76eccfb5d3271bf8ee1fd5d6dec0ca8c40269ecadea94224d181->enter($__internal_97895aaa6d1f76eccfb5d3271bf8ee1fd5d6dec0ca8c40269ecadea94224d181_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e52bab728b6c9525b75f5b6a0323471876267068605ddf16fa760edc383907e6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e52bab728b6c9525b75f5b6a0323471876267068605ddf16fa760edc383907e6->enter($__internal_e52bab728b6c9525b75f5b6a0323471876267068605ddf16fa760edc383907e6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_e7e1728e4f239c897ff0a08cb34381a4393d07f18b55df20ff1b9fd23c36e911 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e7e1728e4f239c897ff0a08cb34381a4393d07f18b55df20ff1b9fd23c36e911->enter($__internal_e7e1728e4f239c897ff0a08cb34381a4393d07f18b55df20ff1b9fd23c36e911_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e43efdac2b73363f4646b884dec43623b44fcdbfdab0b4c376864985d7b6aa81 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e43efdac2b73363f4646b884dec43623b44fcdbfdab0b4c376864985d7b6aa81->enter($__internal_e43efdac2b73363f4646b884dec43623b44fcdbfdab0b4c376864985d7b6aa81_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Reservierung creation</h1>
@@ -56,27 +56,16 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
 
-             ";
-        // line 11
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dozent", array()), 'row', array("attr" => array("class" => "form-control")));
-        echo "
-             ";
-        // line 12
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "student", array()), 'row', array("attr" => array("class" => "form-control")));
-        echo "
-             ";
-        // line 13
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "raum", array()), 'row', array("attr" => array("class" => "form-control")));
-        echo "
+
 
         ";
-        // line 15
+        // line 13
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
         <br>
         <input class=\"mdl-button mdl-js-button mdl-button--raised\" type=\"submit\" value=\"Create\" />
     ";
-        // line 18
+        // line 16
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 
@@ -85,7 +74,7 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
           <div class=\"lon\">
 
             <a class=\"mdl-button mdl-js-button mdl-button--raised\" href=\"";
-        // line 24
+        // line 22
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("adminReservierung_index");
         echo "\">Back to the list</a>
           </div>
@@ -97,16 +86,16 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
   </div>
 ";
         
-        $__internal_e7e1728e4f239c897ff0a08cb34381a4393d07f18b55df20ff1b9fd23c36e911->leave($__internal_e7e1728e4f239c897ff0a08cb34381a4393d07f18b55df20ff1b9fd23c36e911_prof);
+        $__internal_e43efdac2b73363f4646b884dec43623b44fcdbfdab0b4c376864985d7b6aa81->leave($__internal_e43efdac2b73363f4646b884dec43623b44fcdbfdab0b4c376864985d7b6aa81_prof);
 
         
-        $__internal_97895aaa6d1f76eccfb5d3271bf8ee1fd5d6dec0ca8c40269ecadea94224d181->leave($__internal_97895aaa6d1f76eccfb5d3271bf8ee1fd5d6dec0ca8c40269ecadea94224d181_prof);
+        $__internal_e52bab728b6c9525b75f5b6a0323471876267068605ddf16fa760edc383907e6->leave($__internal_e52bab728b6c9525b75f5b6a0323471876267068605ddf16fa760edc383907e6_prof);
 
     }
 
     public function getTemplateName()
     {
-        return ":reservierung:new.html.twig";
+        return "reservierung/new.html.twig";
     }
 
     public function isTraitable()
@@ -116,7 +105,7 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
 
     public function getDebugInfo()
     {
-        return array (  89 => 24,  80 => 18,  74 => 15,  69 => 13,  65 => 12,  61 => 11,  56 => 9,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  78 => 22,  69 => 16,  63 => 13,  56 => 9,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -139,9 +128,7 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
            <div class=\"form-groupe\">
              {{ form_start(form) }}
 
-             {{ form_row(form.dozent, {'attr':{'class':'form-control'}})}}
-             {{ form_row(form.student, {'attr':{'class':'form-control'}})}}
-             {{ form_row(form.raum, {'attr':{'class':'form-control'}})}}
+
 
         {{ form_widget(form) }}
         <br>
@@ -161,6 +148,6 @@ class __TwigTemplate_a4a9c9b445e111ecf9ead7f382795adec657e6fc2fe9a1faa4508959118
   </div>
   </div>
 {% endblock %}
-", ":reservierung:new.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/reservierung/new.html.twig");
+", "reservierung/new.html.twig", "/Applications/XAMPP/xamppfiles/htdocs/RaumReservierung/app/Resources/views/reservierung/new.html.twig");
     }
 }

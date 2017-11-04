@@ -83,6 +83,14 @@ class Raum
        * @ORM\JoinColumn(nullable=false)
        */
       private $gebaeude;
+
+
+      /**
+       * @ORM\OneToMany(targetEntity="ReservierungAdmin", mappedBy="raumadmin")
+       */
+      protected $reservierungAdmin;
+
+
     /**
      * Get id
      *
@@ -174,7 +182,7 @@ class Raum
         return $this->gebaeude;
     }
 
-    
+
 
         public function setImage(\HZ\raumReservierungBundle\Entity\Image $image)
         {
@@ -341,4 +349,41 @@ class Raum
     {
         return $this->frei;
     }
+
+    /**
+     * Add reservierungAdmin
+     *
+     * @param \HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin
+     *
+     * @return Raum
+     */
+    public function addReservierungAdmin(\HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin)
+    {
+        $this->reservierungAdmin[] = $reservierungAdmin;
+
+        return $this;
+    }
+
+    /**
+     * Remove reservierungAdmin
+     *
+     * @param \HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin
+     */
+    public function removeReservierungAdmin(\HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin)
+    {
+        $this->reservierungAdmin->removeElement($reservierungAdmin);
+    }
+
+    /**
+     * Get reservierungAdmin
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getReservierungAdmin()
+    {
+        return $this->reservierungAdmin;
+    }
+
+  
+
 }

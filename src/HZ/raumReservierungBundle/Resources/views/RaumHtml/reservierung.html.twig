@@ -3,7 +3,7 @@
 
   <style media="screen">
     .Disponible {
-      background-color: red;
+      background-color: green;
       color: #FFF;
       border-radius: 0.1em;
       border-color: #000;
@@ -98,16 +98,14 @@
   {% endif %}
 
   <script type="text/javascript">
-  
+
     $(document).ready(function() {
       $('#calendar').fullCalendar({
         header: {
           center: 'agendaWeek'
+
         },
-        events: {
-            url: "{{ path('h_zraum_reservierung_search', {'raumId':raumId})}}",
-            console.console.log();
-        }
+        events: {{dates|raw}}
 
       })
 
