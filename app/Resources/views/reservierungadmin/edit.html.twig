@@ -1,0 +1,46 @@
+{% extends 'layoutAdmin.html.twig' %}
+
+{% block body %}
+  <h1>Reservierungadmin edit</h1>
+  <div class="cration_artiste">
+    <div class="cration mdl-shadow--2dp">
+      <div class="form_creation">
+        {{ form_start(edit_form) }}
+
+        {{ form_row(edit_form.start)}}
+        <br>
+        {{ form_row(edit_form.end)}}
+        <br>
+        {{ form_row(edit_form.title, {'attr':{'class':'form-control'}})}}<br>
+        {{ form_row(edit_form.url, {'attr':{'class':'form-control'}})}}<br>
+        {{ form_row(edit_form.className, {'attr':{'class':'form-control'}})}}<br>
+        {{ form_row(edit_form.raum, {'attr':{'class':'form-control'}})}}<br>
+
+        {{ form_widget(edit_form) }}
+        <div class="button_p_edit">
+          <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Edit"/>
+          {{ form_end(edit_form) }}
+
+          <ul>
+            <li>
+
+              <div class="retour">
+                <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('admin_reservierungadmin_index') }}">Back to the list</a>
+              </div>
+            </li>
+            <li>
+              {{ form_start(delete_form) }}
+              <div class="modifier">
+                <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Delete">
+              </div>
+
+              {{ form_end(delete_form) }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

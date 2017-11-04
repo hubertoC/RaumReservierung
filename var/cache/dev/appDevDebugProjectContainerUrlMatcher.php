@@ -108,317 +108,387 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        elseif (0 === strpos($pathinfo, '/admin/admin')) {
-            if (0 === strpos($pathinfo, '/admin/adminDozent')) {
-                // adminDozent_index
-                if ('/admin/adminDozent' === $trimmedPathinfo) {
-                    if ('GET' !== $canonicalMethod) {
-                        $allow[] = 'GET';
-                        goto not_adminDozent_index;
-                    }
+        elseif (0 === strpos($pathinfo, '/admin')) {
+            if (0 === strpos($pathinfo, '/admin/admin')) {
+                if (0 === strpos($pathinfo, '/admin/adminDozent')) {
+                    // adminDozent_index
+                    if ('/admin/adminDozent' === $trimmedPathinfo) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminDozent_index;
+                        }
 
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'adminDozent_index');
-                    }
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'adminDozent_index');
+                        }
 
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::indexAction',  '_route' => 'adminDozent_index',);
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::indexAction',  '_route' => 'adminDozent_index',);
+                    }
+                    not_adminDozent_index:
+
+                    // adminDozent_show
+                    if (preg_match('#^/admin/adminDozent/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminDozent_show;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminDozent_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::showAction',));
+                    }
+                    not_adminDozent_show:
+
+                    // adminDozent_new
+                    if ('/admin/adminDozent/new' === $pathinfo) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminDozent_new;
+                        }
+
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::newAction',  '_route' => 'adminDozent_new',);
+                    }
+                    not_adminDozent_new:
+
+                    // adminDozent_edit
+                    if (preg_match('#^/admin/adminDozent/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminDozent_edit;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminDozent_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::editAction',));
+                    }
+                    not_adminDozent_edit:
+
+                    // adminDozent_delete
+                    if (preg_match('#^/admin/adminDozent/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if ('DELETE' !== $canonicalMethod) {
+                            $allow[] = 'DELETE';
+                            goto not_adminDozent_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminDozent_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::deleteAction',));
+                    }
+                    not_adminDozent_delete:
+
                 }
-                not_adminDozent_index:
 
-                // adminDozent_show
-                if (preg_match('#^/admin/adminDozent/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    if ('GET' !== $canonicalMethod) {
-                        $allow[] = 'GET';
-                        goto not_adminDozent_show;
+                elseif (0 === strpos($pathinfo, '/admin/adminStudent')) {
+                    // adminStudent_index
+                    if ('/admin/adminStudent' === $trimmedPathinfo) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminStudent_index;
+                        }
+
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'adminStudent_index');
+                        }
+
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::indexAction',  '_route' => 'adminStudent_index',);
                     }
+                    not_adminStudent_index:
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminDozent_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::showAction',));
-                }
-                not_adminDozent_show:
+                    // adminStudent_show
+                    if (preg_match('#^/admin/adminStudent/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminStudent_show;
+                        }
 
-                // adminDozent_new
-                if ('/admin/adminDozent/new' === $pathinfo) {
-                    if (!in_array($canonicalMethod, array('GET', 'POST'))) {
-                        $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminDozent_new;
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminStudent_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::showAction',));
                     }
+                    not_adminStudent_show:
 
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::newAction',  '_route' => 'adminDozent_new',);
-                }
-                not_adminDozent_new:
+                    // adminStudent_new
+                    if ('/admin/adminStudent/new' === $pathinfo) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminStudent_new;
+                        }
 
-                // adminDozent_edit
-                if (preg_match('#^/admin/adminDozent/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    if (!in_array($canonicalMethod, array('GET', 'POST'))) {
-                        $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminDozent_edit;
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::newAction',  '_route' => 'adminStudent_new',);
                     }
+                    not_adminStudent_new:
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminDozent_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::editAction',));
-                }
-                not_adminDozent_edit:
+                    // adminStudent_edit
+                    if (preg_match('#^/admin/adminStudent/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminStudent_edit;
+                        }
 
-                // adminDozent_delete
-                if (preg_match('#^/admin/adminDozent/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    if ('DELETE' !== $canonicalMethod) {
-                        $allow[] = 'DELETE';
-                        goto not_adminDozent_delete;
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminStudent_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::editAction',));
                     }
+                    not_adminStudent_edit:
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminDozent_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\DozentController::deleteAction',));
+                    // adminStudent_delete
+                    if (preg_match('#^/admin/adminStudent/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if ('DELETE' !== $canonicalMethod) {
+                            $allow[] = 'DELETE';
+                            goto not_adminStudent_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminStudent_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::deleteAction',));
+                    }
+                    not_adminStudent_delete:
+
                 }
-                not_adminDozent_delete:
+
+                elseif (0 === strpos($pathinfo, '/admin/adminRaum')) {
+                    // adminRaum_index
+                    if ('/admin/adminRaum' === $trimmedPathinfo) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminRaum_index;
+                        }
+
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'adminRaum_index');
+                        }
+
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::indexAction',  '_route' => 'adminRaum_index',);
+                    }
+                    not_adminRaum_index:
+
+                    // adminRaum_show
+                    if (preg_match('#^/admin/adminRaum/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminRaum_show;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminRaum_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::showAction',));
+                    }
+                    not_adminRaum_show:
+
+                    // adminRaum_new
+                    if ('/admin/adminRaum/new' === $pathinfo) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminRaum_new;
+                        }
+
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::newAction',  '_route' => 'adminRaum_new',);
+                    }
+                    not_adminRaum_new:
+
+                    // adminRaum_edit
+                    if (preg_match('#^/admin/adminRaum/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminRaum_edit;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminRaum_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::editAction',));
+                    }
+                    not_adminRaum_edit:
+
+                    // adminRaum_delete
+                    if (preg_match('#^/admin/adminRaum/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if ('DELETE' !== $canonicalMethod) {
+                            $allow[] = 'DELETE';
+                            goto not_adminRaum_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminRaum_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::deleteAction',));
+                    }
+                    not_adminRaum_delete:
+
+                }
+
+                elseif (0 === strpos($pathinfo, '/admin/adminGebaeude')) {
+                    // adminGebaeude_index
+                    if ('/admin/adminGebaeude' === $trimmedPathinfo) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminGebaeude_index;
+                        }
+
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'adminGebaeude_index');
+                        }
+
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::indexAction',  '_route' => 'adminGebaeude_index',);
+                    }
+                    not_adminGebaeude_index:
+
+                    // adminGebaeude_show
+                    if (preg_match('#^/admin/adminGebaeude/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        if ('GET' !== $canonicalMethod) {
+                            $allow[] = 'GET';
+                            goto not_adminGebaeude_show;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminGebaeude_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::showAction',));
+                    }
+                    not_adminGebaeude_show:
+
+                    // adminGebaeude_new
+                    if ('/admin/adminGebaeude/new' === $pathinfo) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminGebaeude_new;
+                        }
+
+                        return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::newAction',  '_route' => 'adminGebaeude_new',);
+                    }
+                    not_adminGebaeude_new:
+
+                    // adminGebaeude_edit
+                    if (preg_match('#^/admin/adminGebaeude/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        if (!in_array($canonicalMethod, array('GET', 'POST'))) {
+                            $allow = array_merge($allow, array('GET', 'POST'));
+                            goto not_adminGebaeude_edit;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminGebaeude_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::editAction',));
+                    }
+                    not_adminGebaeude_edit:
+
+                    // adminGebaeude_delete
+                    if (preg_match('#^/admin/adminGebaeude/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if ('DELETE' !== $canonicalMethod) {
+                            $allow[] = 'DELETE';
+                            goto not_adminGebaeude_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminGebaeude_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::deleteAction',));
+                    }
+                    not_adminGebaeude_delete:
+
+                }
 
             }
 
-            elseif (0 === strpos($pathinfo, '/admin/adminStudent')) {
-                // adminStudent_index
-                if ('/admin/adminStudent' === $trimmedPathinfo) {
+            elseif (0 === strpos($pathinfo, '/admin/dashboard')) {
+                // adminReservierung_index
+                if ('/admin/dashboard' === $trimmedPathinfo) {
                     if ('GET' !== $canonicalMethod) {
                         $allow[] = 'GET';
-                        goto not_adminStudent_index;
+                        goto not_adminReservierung_index;
                     }
 
                     if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'adminStudent_index');
+                        return $this->redirect($pathinfo.'/', 'adminReservierung_index');
                     }
 
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::indexAction',  '_route' => 'adminStudent_index',);
+                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::indexAction',  '_route' => 'adminReservierung_index',);
                 }
-                not_adminStudent_index:
+                not_adminReservierung_index:
 
-                // adminStudent_show
-                if (preg_match('#^/admin/adminStudent/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                // adminReservierung_show
+                if (preg_match('#^/admin/dashboard/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
                     if ('GET' !== $canonicalMethod) {
                         $allow[] = 'GET';
-                        goto not_adminStudent_show;
+                        goto not_adminReservierung_show;
                     }
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminStudent_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::showAction',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminReservierung_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::showAction',));
                 }
-                not_adminStudent_show:
+                not_adminReservierung_show:
 
-                // adminStudent_new
-                if ('/admin/adminStudent/new' === $pathinfo) {
+                // adminReservierung_new
+                if ('/admin/dashboard/new' === $pathinfo) {
                     if (!in_array($canonicalMethod, array('GET', 'POST'))) {
                         $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminStudent_new;
+                        goto not_adminReservierung_new;
                     }
 
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::newAction',  '_route' => 'adminStudent_new',);
+                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::newAction',  '_route' => 'adminReservierung_new',);
                 }
-                not_adminStudent_new:
+                not_adminReservierung_new:
 
-                // adminStudent_edit
-                if (preg_match('#^/admin/adminStudent/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                // adminReservierung_edit
+                if (preg_match('#^/admin/dashboard/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
                     if (!in_array($canonicalMethod, array('GET', 'POST'))) {
                         $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminStudent_edit;
+                        goto not_adminReservierung_edit;
                     }
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminStudent_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::editAction',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminReservierung_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::editAction',));
                 }
-                not_adminStudent_edit:
+                not_adminReservierung_edit:
 
-                // adminStudent_delete
-                if (preg_match('#^/admin/adminStudent/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                // adminReservierung_delete
+                if (preg_match('#^/admin/dashboard/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
                     if ('DELETE' !== $canonicalMethod) {
                         $allow[] = 'DELETE';
-                        goto not_adminStudent_delete;
+                        goto not_adminReservierung_delete;
                     }
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminStudent_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\StudentController::deleteAction',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminReservierung_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::deleteAction',));
                 }
-                not_adminStudent_delete:
+                not_adminReservierung_delete:
 
             }
 
-            elseif (0 === strpos($pathinfo, '/admin/adminRaum')) {
-                // adminRaum_index
-                if ('/admin/adminRaum' === $trimmedPathinfo) {
+            elseif (0 === strpos($pathinfo, '/admin/reservierungadmin')) {
+                // admin_reservierungadmin_index
+                if ('/admin/reservierungadmin' === $trimmedPathinfo) {
                     if ('GET' !== $canonicalMethod) {
                         $allow[] = 'GET';
-                        goto not_adminRaum_index;
+                        goto not_admin_reservierungadmin_index;
                     }
 
                     if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'adminRaum_index');
+                        return $this->redirect($pathinfo.'/', 'admin_reservierungadmin_index');
                     }
 
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::indexAction',  '_route' => 'adminRaum_index',);
+                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungAdminController::indexAction',  '_route' => 'admin_reservierungadmin_index',);
                 }
-                not_adminRaum_index:
+                not_admin_reservierungadmin_index:
 
-                // adminRaum_show
-                if (preg_match('#^/admin/adminRaum/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                // admin_reservierungadmin_show
+                if (preg_match('#^/admin/reservierungadmin/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
                     if ('GET' !== $canonicalMethod) {
                         $allow[] = 'GET';
-                        goto not_adminRaum_show;
+                        goto not_admin_reservierungadmin_show;
                     }
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminRaum_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::showAction',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_reservierungadmin_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungAdminController::showAction',));
                 }
-                not_adminRaum_show:
+                not_admin_reservierungadmin_show:
 
-                // adminRaum_new
-                if ('/admin/adminRaum/new' === $pathinfo) {
+                // admin_reservierungadmin_new
+                if ('/admin/reservierungadmin/new' === $pathinfo) {
                     if (!in_array($canonicalMethod, array('GET', 'POST'))) {
                         $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminRaum_new;
+                        goto not_admin_reservierungadmin_new;
                     }
 
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::newAction',  '_route' => 'adminRaum_new',);
+                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungAdminController::newAction',  '_route' => 'admin_reservierungadmin_new',);
                 }
-                not_adminRaum_new:
+                not_admin_reservierungadmin_new:
 
-                // adminRaum_edit
-                if (preg_match('#^/admin/adminRaum/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                // admin_reservierungadmin_edit
+                if (preg_match('#^/admin/reservierungadmin/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
                     if (!in_array($canonicalMethod, array('GET', 'POST'))) {
                         $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminRaum_edit;
+                        goto not_admin_reservierungadmin_edit;
                     }
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminRaum_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::editAction',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_reservierungadmin_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungAdminController::editAction',));
                 }
-                not_adminRaum_edit:
+                not_admin_reservierungadmin_edit:
 
-                // adminRaum_delete
-                if (preg_match('#^/admin/adminRaum/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                // admin_reservierungadmin_delete
+                if (preg_match('#^/admin/reservierungadmin/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
                     if ('DELETE' !== $canonicalMethod) {
                         $allow[] = 'DELETE';
-                        goto not_adminRaum_delete;
+                        goto not_admin_reservierungadmin_delete;
                     }
 
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminRaum_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumController::deleteAction',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_reservierungadmin_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungAdminController::deleteAction',));
                 }
-                not_adminRaum_delete:
-
-            }
-
-            elseif (0 === strpos($pathinfo, '/admin/adminGebaeude')) {
-                // adminGebaeude_index
-                if ('/admin/adminGebaeude' === $trimmedPathinfo) {
-                    if ('GET' !== $canonicalMethod) {
-                        $allow[] = 'GET';
-                        goto not_adminGebaeude_index;
-                    }
-
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'adminGebaeude_index');
-                    }
-
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::indexAction',  '_route' => 'adminGebaeude_index',);
-                }
-                not_adminGebaeude_index:
-
-                // adminGebaeude_show
-                if (preg_match('#^/admin/adminGebaeude/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    if ('GET' !== $canonicalMethod) {
-                        $allow[] = 'GET';
-                        goto not_adminGebaeude_show;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminGebaeude_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::showAction',));
-                }
-                not_adminGebaeude_show:
-
-                // adminGebaeude_new
-                if ('/admin/adminGebaeude/new' === $pathinfo) {
-                    if (!in_array($canonicalMethod, array('GET', 'POST'))) {
-                        $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminGebaeude_new;
-                    }
-
-                    return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::newAction',  '_route' => 'adminGebaeude_new',);
-                }
-                not_adminGebaeude_new:
-
-                // adminGebaeude_edit
-                if (preg_match('#^/admin/adminGebaeude/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    if (!in_array($canonicalMethod, array('GET', 'POST'))) {
-                        $allow = array_merge($allow, array('GET', 'POST'));
-                        goto not_adminGebaeude_edit;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminGebaeude_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::editAction',));
-                }
-                not_adminGebaeude_edit:
-
-                // adminGebaeude_delete
-                if (preg_match('#^/admin/adminGebaeude/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    if ('DELETE' !== $canonicalMethod) {
-                        $allow[] = 'DELETE';
-                        goto not_adminGebaeude_delete;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminGebaeude_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\GebaeudeController::deleteAction',));
-                }
-                not_adminGebaeude_delete:
+                not_admin_reservierungadmin_delete:
 
             }
 
         }
 
-        elseif (0 === strpos($pathinfo, '/admin/dashboard')) {
-            // adminReservierung_index
-            if ('/admin/dashboard' === $trimmedPathinfo) {
-                if ('GET' !== $canonicalMethod) {
-                    $allow[] = 'GET';
-                    goto not_adminReservierung_index;
-                }
-
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'adminReservierung_index');
-                }
-
-                return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::indexAction',  '_route' => 'adminReservierung_index',);
-            }
-            not_adminReservierung_index:
-
-            // adminReservierung_show
-            if (preg_match('#^/admin/dashboard/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                if ('GET' !== $canonicalMethod) {
-                    $allow[] = 'GET';
-                    goto not_adminReservierung_show;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminReservierung_show')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::showAction',));
-            }
-            not_adminReservierung_show:
-
-            // adminReservierung_new
-            if ('/admin/dashboard/new' === $pathinfo) {
-                if (!in_array($canonicalMethod, array('GET', 'POST'))) {
-                    $allow = array_merge($allow, array('GET', 'POST'));
-                    goto not_adminReservierung_new;
-                }
-
-                return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::newAction',  '_route' => 'adminReservierung_new',);
-            }
-            not_adminReservierung_new:
-
-            // adminReservierung_edit
-            if (preg_match('#^/admin/dashboard/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                if (!in_array($canonicalMethod, array('GET', 'POST'))) {
-                    $allow = array_merge($allow, array('GET', 'POST'));
-                    goto not_adminReservierung_edit;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminReservierung_edit')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::editAction',));
-            }
-            not_adminReservierung_edit:
-
-            // adminReservierung_delete
-            if (preg_match('#^/admin/dashboard/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if ('DELETE' !== $canonicalMethod) {
-                    $allow[] = 'DELETE';
-                    goto not_adminReservierung_delete;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'adminReservierung_delete')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\ReservierungController::deleteAction',));
-            }
-            not_adminReservierung_delete:
-
+        // h_zraum_reservierung_confirmation
+        if ('/confirmation' === $pathinfo) {
+            return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::confirmationAction',  '_route' => 'h_zraum_reservierung_confirmation',);
         }
 
         // h_zraum_reservierung_homepage
@@ -431,7 +501,7 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // h_zraum_reservierung_gebaeudeRaum
-        if (0 === strpos($pathinfo, '/gebauedeRaum') && preg_match('#^/gebauedeRaum/(?P<gebaeude>[^/]++)$#s', $pathinfo, $matches)) {
+        if (0 === strpos($pathinfo, '/gebauedeRaum') && preg_match('#^/gebauedeRaum/(?P<gebaeude>[^/]++)/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'h_zraum_reservierung_gebaeudeRaum')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::gebauedeRaumAction',));
         }
 
@@ -545,8 +615,18 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // h_zraum_reservierung_reservierung
-        if ('/buchen/reservierung' === $pathinfo) {
-            return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::reservierungAction',  '_route' => 'h_zraum_reservierung_reservierung',);
+        if (0 === strpos($pathinfo, '/buchen/reservierung') && preg_match('#^/buchen/reservierung/(?P<raumId>[^/]++)/(?P<raumFrei>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'h_zraum_reservierung_reservierung')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::reservierungAction',));
+        }
+
+        // h_zraum_reservierung_kontakt
+        if ('/kontakt' === $pathinfo) {
+            return array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::kontaktAction',  '_route' => 'h_zraum_reservierung_kontakt',);
+        }
+
+        // h_zraum_reservierung_search
+        if (0 === strpos($pathinfo, '/search') && preg_match('#^/search/(?P<raumId>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'h_zraum_reservierung_search')), array (  '_controller' => 'HZ\\raumReservierungBundle\\Controller\\RaumReservierungController::searchAction',));
         }
 
         if (0 === strpos($pathinfo, '/login')) {

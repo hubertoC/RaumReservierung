@@ -6,8 +6,8 @@
     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Startdatum</th>
+              <th>Id</th>
+                <th>sat</th>
                 <th>Enddatum</th>
                 <th>Actions</th>
             </tr>
@@ -16,8 +16,8 @@
         {% for reservierung in reservierungs %}
             <tr>
                 <td><a href="{{ path('adminReservierung_show', { 'id': reservierung.id }) }}">{{ reservierung.id }}</a></td>
-                <td>{% if reservierung.startDatum %}{{ reservierung.startDatum|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{% if reservierung.endDatum %}{{ reservierung.endDatum|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if reservierung.start %}{{ reservierung.start|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if reservierung.end %}{{ reservierung.end |date('Y-m-d H:i:s') }}{% endif %}</td>
 
                 <td>
                     <ul>

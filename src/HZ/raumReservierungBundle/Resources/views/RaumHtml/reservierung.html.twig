@@ -1,11 +1,115 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Reservierung</title>
-  </head>
-  <body>
-    Ici se trouve le formulaire de reservation et tt les infos dessus!!!!
+{% extends 'layoutPublic.html.twig' %}
+{% block body %}
 
-  </body>
-</html>
+  <style media="screen">
+    .Disponible {
+      background-color: green;
+      color: #FFF;
+      border-radius: 0.1em;
+      border-color: #000;
+    }
+    .NoDisponible {
+      color: #000;
+    }
+
+  </style>
+  <br><br><br>
+  {% if is_granted('ROLE_STUDENT')and raumFrei == 'yes' or is_granted('ROLE_DOZENT') %}
+    <div class="alt-grid " id="reservation">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <br><br>
+            <div class="row col-lg-12 calenderPiker">
+              <div class="testform" id="datepicker">
+                {% if app.session.flashbag.has('user-notice') %}
+                  <div class="alert alert-success">
+                    {% for msg in app.session.flashbag.get('user-notice') %}
+                      <button type="button" class="close" data-dismiss="alert" name="button">
+
+                        <span aria-hidden="true">&times;
+                        </span>
+                        <span class="sr-only">Close</span>
+                      </button>
+                      <a href="/" class="alert-link">{{ msg }}</a>
+
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                <div class="bookingTitle">
+                  <br>
+                  Wann findet Ihre Veranstaltung statt?
+                </div>
+                {{ form_start(form) }}
+                {{ form_row(form.title , {'label': 'Event Title *','attr':{'class':'form-control'}})}}
+                <br>
+                {{ form_row(form.start, {'label': 'Start Datum *','attr':{'id':''}})}}
+                <br>
+                {{ form_row(form.end, {'label': 'Ende Datum *'})}}
+                <br>
+                {{ form_row(form.url , {'label': 'Event Link','attr':{'class':'form-control'}})}}
+                <br>
+                {% if is_granted('ROLE_ADMIN') %}
+                  {{ form_row(form.className , {'label': 'Css Color','attr':{'class':'form-control'}})}}
+                {% endif %}
+
+                <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Reservieren"/>
+                <div style="display:none;">
+                  {{ form_row(form.className , {'label': 'Css Color'})}}
+                </div>
+                {{ form_widget(form) }}
+                {{ form_end(form) }}
+
+              </div>
+              <div class="legende">
+                Legende:
+              </div>
+              <div class="rectangleReserver">
+                <span>Gebucht</span>
+              </div>
+              <br><br>
+              <div class="rectangleFrei">
+                <span>Verfügbar</span>
+              </div>
+              <br>
+              <div class="rectangleBlockiert">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Crystal_Project_Lock.png" alt="">
+                <span>Gesperrt</span>
+              </div>
+            </div>
+            <br><br><br><br><br><br><br>
+
+          </div>
+          <br><br>
+          <div style="background-color: #fff; padding:0em" class="col-lg-offset-1 col-lg-7 ">
+            <div id='calendar'></div>
+
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <div class="jumbotron error">
+      <h2>Diese Raum ist leider für Student nicht frei geschalten!!!</h2>
+    </div>
+  {% endif %}
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        header: {
+          center: 'agendaWeek'
+
+        },
+        events: {{dates|raw}}
+
+      })
+
+    });
+  </script>
+
+{% endblock %}

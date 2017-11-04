@@ -6,6 +6,9 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
 
 class RaumType extends AbstractType
 {
@@ -16,13 +19,25 @@ class RaumType extends AbstractType
     {
         $builder->add('nummer')
                 ->add('name')
+                ->add('sitzplatze')
+                ->add('beamer')
+                ->add('steckdose')
+                ->add('usbAnschluss')
                 ->add('image', ImageType::class)
+
                 ->add('gebaeude',EntityType::class, array(
                                                                 'class' => 'HZraumReservierungBundle:Gebaeude',
                                                                 'choice_label' => 'name',
                                                                 'multiple'=>false
                                                               )
-                          );
+                          )  ->add('frei' ,ChoiceType::class, array(
+                                                              'choices'  => array(
+                                                                '' => null,
+                                                                'Ja' => 'yes',
+                                                                'Nein' => 'no',
+                                                              ),
+                                                              'label' => 'Auch für Student Freischalten'
+                                                            ));
     }
 
     /**

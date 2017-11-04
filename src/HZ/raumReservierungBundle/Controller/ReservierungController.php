@@ -35,6 +35,8 @@ class ReservierungController extends Controller
     {
         $reservierung = new Reservierung();
         $form = $this->createForm('HZ\raumReservierungBundle\Form\ReservierungType', $reservierung);
+        $raum = $em->getRepository('HZraumReservierungBundle:Raum')->findAll();
+        
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

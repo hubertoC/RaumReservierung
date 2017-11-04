@@ -6,6 +6,9 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\TimeType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class ReservierungType extends AbstractType
 {
@@ -14,29 +17,18 @@ class ReservierungType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('startDatum')
-                ->add('endDatum')
-                ->add('dozent',EntityType::class, array(
-                                                                'class' => 'HZraumReservierungBundle:Dozent',
-                                                                'choice_label' => 'name',
-                                                                'multiple'=>false,
-                                                                'required' => false
+        $builder
+        ->add('start')
+        ->add('end')
+        ->add('title')
+        ->add('url')
+        ->add('className', ChoiceType::class, array(
+    'choices'  => array(
+        'Diponible' => 'Disponible',
+        'NoDisponible' => 'NoDisponible',
+    )))
 
-                                                              )
-                          )
-                          ->add('student',EntityType::class, array(
-                                                                'class' => 'HZraumReservierungBundle:Student',
-                                                                'choice_label' => 'name',
-                                                                'multiple'=>false,
-                                                                'required' => false
-
-                                                              )
-                          )->add('raum',EntityType::class, array(
-                                                                'class' => 'HZraumReservierungBundle:Raum',
-                                                                'choice_label' => 'name',
-                                                                'multiple'=>false
-                                                              )
-                          );
+                    ;
     }
 
     /**

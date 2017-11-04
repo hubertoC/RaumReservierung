@@ -35,6 +35,42 @@ class Raum
      */
     private $name;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="frei", type="string")
+     */
+    private $frei;
+
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="sitzplatze", type="integer")
+     */
+    private $sitzplatze;
+
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="beamer", type="integer")
+     */
+    private $beamer;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="steckdose", type="integer")
+     */
+    private $steckdose;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="usbAnschluss", type="integer")
+     */
+    private $usbAnschluss;
 
     /**
      * @ORM\OneToOne(targetEntity="HZ\raumReservierungBundle\Entity\Image", cascade={"persist","remove"})
@@ -42,18 +78,19 @@ class Raum
      */
      private $image;
 
-
-
-    /**
-     * @ORM\OneToMany(targetEntity="Reservierung", mappedBy="roum")
-     */
-    protected $reservierung;
-
     /**
        * @ORM\ManyToOne(targetEntity="HZ\raumReservierungBundle\Entity\Gebaeude")
        * @ORM\JoinColumn(nullable=false)
        */
       private $gebaeude;
+
+
+      /**
+       * @ORM\OneToMany(targetEntity="ReservierungAdmin", mappedBy="raumadmin")
+       */
+      protected $reservierungAdmin;
+
+
     /**
      * Get id
      *
@@ -111,6 +148,8 @@ class Raum
     {
         return $this->name;
     }
+
+
     /**
      * Constructor
      */
@@ -143,39 +182,6 @@ class Raum
         return $this->gebaeude;
     }
 
-    /**
-     * Add reservierung
-     *
-     * @param \HZ\raumReservierungBundle\Entity\Reservierung $reservierung
-     *
-     * @return Raum
-     */
-    public function addReservierung(\HZ\raumReservierungBundle\Entity\Reservierung $reservierung)
-    {
-        $this->reservierung[] = $reservierung;
-
-        return $this;
-    }
-
-    /**
-     * Remove reservierung
-     *
-     * @param \HZ\raumReservierungBundle\Entity\Reservierung $reservierung
-     */
-    public function removeReservierung(\HZ\raumReservierungBundle\Entity\Reservierung $reservierung)
-    {
-        $this->reservierung->removeElement($reservierung);
-    }
-
-    /**
-     * Get reservierung
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getReservierung()
-    {
-        return $this->reservierung;
-    }
 
 
         public function setImage(\HZ\raumReservierungBundle\Entity\Image $image)
@@ -195,5 +201,189 @@ class Raum
             return $this->image;
         }
 
+
+
+
+    /**
+     * Set beamer
+     *
+     * @param integer $beamer
+     *
+     * @return Raum
+     */
+    public function setBeamer($beamer)
+    {
+        $this->beamer = $beamer;
+
+        return $this;
+    }
+
+    /**
+     * Get beamer
+     *
+     * @return integer
+     */
+    public function getBeamer()
+    {
+        return $this->beamer;
+    }
+
+    /**
+     * Set steckdose
+     *
+     * @param integer $steckdose
+     *
+     * @return Raum
+     */
+    public function setSteckdose($steckdose)
+    {
+        $this->steckdose = $steckdose;
+
+        return $this;
+    }
+
+    /**
+     * Get steckdose
+     *
+     * @return integer
+     */
+    public function getSteckdose()
+    {
+        return $this->steckdose;
+    }
+
+
+
+    /**
+     * Set sitzplätze
+     *
+     * @param integer $sitzplätze
+     *
+     * @return Raum
+     */
+    public function setSitzplätze($sitzplätze)
+    {
+        $this->sitzplätze = $sitzplätze;
+
+        return $this;
+    }
+
+    /**
+     * Get sitzplätze
+     *
+     * @return integer
+     */
+    public function getSitzplätze()
+    {
+        return $this->sitzplätze;
+    }
+
+    /**
+     * Set usbAnschluss
+     *
+     * @param integer $usbAnschluss
+     *
+     * @return Raum
+     */
+    public function setUsbAnschluss($usbAnschluss)
+    {
+        $this->usbAnschluss = $usbAnschluss;
+
+        return $this;
+    }
+
+    /**
+     * Get usbAnschluss
+     *
+     * @return integer
+     */
+    public function getUsbAnschluss()
+    {
+        return $this->usbAnschluss;
+    }
+
+    /**
+     * Set sitzplatze
+     *
+     * @param integer $sitzplatze
+     *
+     * @return Raum
+     */
+    public function setSitzplatze($sitzplatze)
+    {
+        $this->sitzplatze = $sitzplatze;
+
+        return $this;
+    }
+
+    /**
+     * Get sitzplatze
+     *
+     * @return integer
+     */
+    public function getSitzplatze()
+    {
+        return $this->sitzplatze;
+    }
+
+    /**
+     * Set frei
+     *
+     * @param string $frei
+     *
+     * @return Raum
+     */
+    public function setFrei($frei)
+    {
+        $this->frei = $frei;
+
+        return $this;
+    }
+
+    /**
+     * Get frei
+     *
+     * @return string
+     */
+    public function getFrei()
+    {
+        return $this->frei;
+    }
+
+    /**
+     * Add reservierungAdmin
+     *
+     * @param \HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin
+     *
+     * @return Raum
+     */
+    public function addReservierungAdmin(\HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin)
+    {
+        $this->reservierungAdmin[] = $reservierungAdmin;
+
+        return $this;
+    }
+
+    /**
+     * Remove reservierungAdmin
+     *
+     * @param \HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin
+     */
+    public function removeReservierungAdmin(\HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin)
+    {
+        $this->reservierungAdmin->removeElement($reservierungAdmin);
+    }
+
+    /**
+     * Get reservierungAdmin
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getReservierungAdmin()
+    {
+        return $this->reservierungAdmin;
+    }
+
+  
 
 }

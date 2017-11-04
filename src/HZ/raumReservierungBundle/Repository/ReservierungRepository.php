@@ -1,6 +1,7 @@
 <?php
 
 namespace HZ\raumReservierungBundle\Repository;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * ReservierungRepository
@@ -10,4 +11,34 @@ namespace HZ\raumReservierungBundle\Repository;
  */
 class ReservierungRepository extends \Doctrine\ORM\EntityRepository
 {
+  public function dateCompare($raumId){
+
+    $qb = $this->createQueryBuilder('a');
+    $qb
+      ->Where('a.raum = :raumId'  )
+      ->setParameter('raumId', $raumId);
+
+      return $qb
+        ->getQuery()
+        ->getResult()
+      ;
+  }
+
+
+  public function dateJson($raumId){
+
+    $qb = $this->createQueryBuilder('a');
+    $qb
+      ->Where('a.raum = :raumId'  )
+      ->setParameter('raumId', $raumId);
+
+      $result = $qb
+        ->getQuery()
+        ->getResult()
+      ;
+      return new Response(json_encode($result), 200);
+
+  }
 }
+//selectione tout les reservation au niveau de raum StarDate et Enddate si une reservation est entre ces
+//deux date , alors dit que la reservation n'est pas disponible pour cette date

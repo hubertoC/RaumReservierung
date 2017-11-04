@@ -64,10 +64,10 @@ class Raum extends \HZ\raumReservierungBundle\Entity\Raum implements \Doctrine\O
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'image', 'reservierung', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude'];
+            return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'frei', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'sitzplatze', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'beamer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'steckdose', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'usbAnschluss', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'image', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude', 'reservierungAdmin'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'image', 'reservierung', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude'];
+        return ['__isInitialized__', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'id', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'nummer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'name', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'frei', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'sitzplatze', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'beamer', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'steckdose', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'usbAnschluss', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'image', '' . "\0" . 'HZ\\raumReservierungBundle\\Entity\\Raum' . "\0" . 'gebaeude', 'reservierungAdmin'];
     }
 
     /**
@@ -257,39 +257,6 @@ class Raum extends \HZ\raumReservierungBundle\Entity\Raum implements \Doctrine\O
     /**
      * {@inheritDoc}
      */
-    public function addReservierung(\HZ\raumReservierungBundle\Entity\Reservierung $reservierung)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addReservierung', [$reservierung]);
-
-        return parent::addReservierung($reservierung);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeReservierung(\HZ\raumReservierungBundle\Entity\Reservierung $reservierung)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeReservierung', [$reservierung]);
-
-        return parent::removeReservierung($reservierung);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getReservierung()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReservierung', []);
-
-        return parent::getReservierung();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setImage(\HZ\raumReservierungBundle\Entity\Image $image)
     {
 
@@ -307,6 +274,171 @@ class Raum extends \HZ\raumReservierungBundle\Entity\Raum implements \Doctrine\O
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage', []);
 
         return parent::getImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setBeamer($beamer)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setBeamer', [$beamer]);
+
+        return parent::setBeamer($beamer);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getBeamer()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getBeamer', []);
+
+        return parent::getBeamer();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSteckdose($steckdose)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSteckdose', [$steckdose]);
+
+        return parent::setSteckdose($steckdose);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSteckdose()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSteckdose', []);
+
+        return parent::getSteckdose();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSitzplätze($sitzplätze)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSitzplätze', [$sitzplätze]);
+
+        return parent::setSitzplätze($sitzplätze);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSitzplätze()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSitzplätze', []);
+
+        return parent::getSitzplätze();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setUsbAnschluss($usbAnschluss)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsbAnschluss', [$usbAnschluss]);
+
+        return parent::setUsbAnschluss($usbAnschluss);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getUsbAnschluss()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsbAnschluss', []);
+
+        return parent::getUsbAnschluss();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSitzplatze($sitzplatze)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSitzplatze', [$sitzplatze]);
+
+        return parent::setSitzplatze($sitzplatze);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSitzplatze()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSitzplatze', []);
+
+        return parent::getSitzplatze();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFrei($frei)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFrei', [$frei]);
+
+        return parent::setFrei($frei);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFrei()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFrei', []);
+
+        return parent::getFrei();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function addReservierungAdmin(\HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addReservierungAdmin', [$reservierungAdmin]);
+
+        return parent::addReservierungAdmin($reservierungAdmin);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function removeReservierungAdmin(\HZ\raumReservierungBundle\Entity\ReservierungAdmin $reservierungAdmin)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeReservierungAdmin', [$reservierungAdmin]);
+
+        return parent::removeReservierungAdmin($reservierungAdmin);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getReservierungAdmin()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReservierungAdmin', []);
+
+        return parent::getReservierungAdmin();
     }
 
 }

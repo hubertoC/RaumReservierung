@@ -1,14 +1,52 @@
 {% extends 'layoutPublic.html.twig' %}
 {% block body %}
-    Tout les gebaeude:
-{% for item in gebaeude %}
-<a href="{{ path('h_zraum_reservierung_gebaeudeRaum', {'gebaeude': item.id}) }}">
-GebaeudeName: {{item.name}}  GebaeudeNummer: {{item.nummer}}</a>
-{% endfor %}
+  <div class="jumbotron">
+    <div class="container">
+      <h1> Raum Reservierung </h1>
+    </div>
+  </div>
 
-<div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
+  <div class="alt-grid">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-5 description"><br>
+          <div class="titelDecription">
+          Willkommen auf unsere Webseite,<br><br>
+        </div>
+
+in Rahmen des WI&AI Projekt sind wir von Professor Doktor Christian Kohls beauftragt worden eine Webseite zu erstellen.<br>
+
+Unsere Webseite dient dazu bestimmte Räume unsere Hochschule zu Buchen.<br><br>
+Warum sollte man ein Raum online buchen, obwohl man die Möglichkeit hat direkt in den Raum hereingehen und nutzen kann, wenn er frei ist?<br>
+
+Es gabt oft das Problem, dass man bei der Benutzung eines Raumes immer gestört ist, wenn Leute immer hereinkommen.<br><br>
+
+Deswegen haben wir eine Webseite erstellt, womit wir viele verschieden räumen verwalten. Wir geben ihnen somit die Möglichkeit frühzeitig ein Raum für ihre Veranstaltungen zu buchen. Sie haben auch die Möglichkeit, wenn sie schon vor der Tür stehen zu prüfen, ob der Raum frei ist. Indem sie den QR-Code, der an der Tür ist, einscannen. So werden sie direkt zu unsere Webseite weitergeleitet, wo sie sich die Verfügbarkeit den gewünschten Raum anschauen können.<br><br><br>
+
+
+Erstellt von:
+
+
+Hubert Tegang, Raissa Tchounga, Marie Kouadjane, Josefa Pagui.<br><br>
+
+        </div>
+        <div class="col-lg-6 col-lg-offset-1">
+          <section id="categorie">
+            {% for item in gebaeude %}
+              <div class="gallery">
+                <a href="{{ path('h_zraum_reservierung_gebaeudeRaum', {'gebaeude': item.id, 'name': item.name}) }}">
+                  <img src="{{ asset(item.image.webPath)}}">
+                </a>
+                <div class="desc">
+                  {{item.name}}
+                </div>
+              </div>
+            {% endfor %}
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
 {% endblock %}

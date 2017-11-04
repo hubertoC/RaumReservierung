@@ -43,12 +43,6 @@ class Student
     private $email;
 
     /**
-     * @ORM\OneToMany(targetEntity="Reservierung", mappedBy="student")
-     */
-    protected $reservierung;
-
-
-    /**
      * Get id
      *
      * @return int
@@ -129,45 +123,6 @@ class Student
     {
         return $this->email;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->reservierung = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
-    /**
-     * Add reservierung
-     *
-     * @param \HZ\raumReservierungBundle\Entity\Reservierung $reservierung
-     *
-     * @return Student
-     */
-    public function addReservierung(\HZ\raumReservierungBundle\Entity\Reservierung $reservierung)
-    {
-        $this->reservierung[] = $reservierung;
 
-        return $this;
-    }
-
-    /**
-     * Remove reservierung
-     *
-     * @param \HZ\raumReservierungBundle\Entity\Reservierung $reservierung
-     */
-    public function removeReservierung(\HZ\raumReservierungBundle\Entity\Reservierung $reservierung)
-    {
-        $this->reservierung->removeElement($reservierung);
-    }
-
-    /**
-     * Get reservierung
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getReservierung()
-    {
-        return $this->reservierung;
-    }
 }

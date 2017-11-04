@@ -23,4 +23,18 @@ class RaumRepository extends \Doctrine\ORM\EntityRepository
             return $qb->getQuery()->getResult();
   }
 
+public function studentRaumByGebaeude($gebaeude){
+  $qb = $this->createQueryBuilder('a');
+  $qb
+  ->innerJoin('a.gebaeude','c')
+  ->addSelect('c')
+  ->andWhere($qb->expr()->in('c.id', $gebaeude))
+    ->andWhere('a.frei LIKE :yes'  )
+    ->setParameter('yes', 'yes');
+
+    return $qb
+      ->getQuery()
+      ->getResult()
+    ;
+}
 }
