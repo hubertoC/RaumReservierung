@@ -1,52 +1,106 @@
 {% extends 'layoutPublic.html.twig' %}
 {% block body %}
-  <div class="jumbotron">
-    <div class="container">
-      <h1> Raum Reservierung </h1>
-    </div>
-  </div>
 
-  <div class="alt-grid">
-    <div class="container">
 
+<!--Header-->
+<div id="header" class="header now fadeIn" data-wow-delay="5s">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-5 description"><br>
-          <div class="titelDecription">
-          Willkommen auf unsere Webseite,<br><br>
-        </div>
+        <div class="col-lg-6 col-md-6 wow bounceInLeft" data-wow-delay="1s">
+          <h1 class="wow flip" data-wow-delay="3s">RaumReservierun Wielkommen</h1>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+                  <button class="btn btn-lg btn-primary">Book Now</button>
+                  <button class="btn btn-lg btn-info">+ Read more</button>
 
-in Rahmen des WI&AI Projekt sind wir von Professor Doktor Christian Kohls beauftragt worden eine Webseite zu erstellen.<br>
-
-Unsere Webseite dient dazu bestimmte Räume unsere Hochschule zu Buchen.<br><br>
-Warum sollte man ein Raum online buchen, obwohl man die Möglichkeit hat direkt in den Raum hereingehen und nutzen kann, wenn er frei ist?<br>
-
-Es gabt oft das Problem, dass man bei der Benutzung eines Raumes immer gestört ist, wenn Leute immer hereinkommen.<br><br>
-
-Deswegen haben wir eine Webseite erstellt, womit wir viele verschieden räumen verwalten. Wir geben ihnen somit die Möglichkeit frühzeitig ein Raum für ihre Veranstaltungen zu buchen. Sie haben auch die Möglichkeit, wenn sie schon vor der Tür stehen zu prüfen, ob der Raum frei ist. Indem sie den QR-Code, der an der Tür ist, einscannen. So werden sie direkt zu unsere Webseite weitergeleitet, wo sie sich die Verfügbarkeit den gewünschten Raum anschauen können.<br><br><br>
-
-
-Erstellt von:
-
-
-Hubert Tegang, Raissa Tchounga, Marie Kouadjane, Josefa Pagui.<br><br>
-
-        </div>
-        <div class="col-lg-6 col-lg-offset-1">
-          <section id="categorie">
-            {% for item in gebaeude %}
-              <div class="gallery">
-                <a href="{{ path('h_zraum_reservierung_gebaeudeRaum', {'gebaeude': item.id, 'name': item.name}) }}">
-                  <img src="{{ asset(item.image.webPath)}}">
-                </a>
-                <div class="desc">
-                  {{item.name}}
-                </div>
+                  <!-- form newslwtter -->
+                  <section class="bg-img text-left">
+          <div>
+            <h2>
+              <strong>Subscribe</strong>
+            </h2>
+            <h6 class="font-alt">Get weekly top new jobs delivered to your inbox</h6>
+            <br><br>
+            <form class="form-subscribe" action="../../../Entity/newsletter.php">
+              <div class="input-group">
+                <input type="text" class="form-control input-lg" placeholder="Your email address">
+                <span class="input-group-btn" style="top:-40px;">
+                  <button class="btn btn-success btn-lg" type="submit" >Subscribe</button>
+                </span>
               </div>
-            {% endfor %}
-          </section>
+            </form>
+          </div>
+        </section>
+
+        </div>
+
+        <div class="col-lg-6 col-md-6 wow bounceInRight" data-wow-delay="2s">
+        <a href="{{ path('h_zraum_reservierung_gebaeudeRaum', {'gebaeude': gebaeude[4].id, 'name': gebaeude[4].name}) }}">
+          <img src="{{ asset(gebaeude[4].image.webPath)}}" alt="" title={{gebaeude[4].name}}>
+        </a>
         </div>
       </div>
     </div>
   </div>
-  <br>
+
+      <!--cecec-->
+
+      <section class="gebaeude">
+        <div class="container">
+          <h1 class="wow fadeInUp" data-wow-delay="3s">Wie gebaeude </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="row">
+                  {% for item in gebaeude %}
+                  <div class="col-lg-4 col-md-4 wow bounceOut" data-wow-delay="3s">
+                  <div class="panel panel-success">
+                  <div class="panel-heading">{{item.name}}</div>
+                  <div class="panel-body">
+                    <a href="{{ path('h_zraum_reservierung_gebaeudeRaum', {'gebaeude': item.id, 'name': item.name}) }}">
+                      <img src="{{ asset(item.image.webPath)}}" class="wow flipInY" data-wow-delay="4.2s">
+                      <br>
+                    <button class="btn btn-primary" style="width:100%;"> + more detail</button>
+
+                    </a>
+                  </div>
+              </div>
+                  </div>
+                  {% endfor %}
+                  </div>
+              </div>
+      </section>
+
+        <section class="contact">
+           <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp" data-wow-delay="3s">Contact US</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <form method="post" action="process_contact.php">
+                        <div class="col-lg-6 col-md-6">
+
+                            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                              <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Ex. Leonel Tatiekam">
+                            </div>
+                            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+                              <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="address@mail.domaine">
+                            </div>
+                            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+                              <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Ex. +237 691549169">
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group wow fadeInUp">
+                                  <textarea class="form-control" data-wow-delay="2.1s" cols="80" rows="5" id=""></textarea>
+                                  </div>
+                                <button type="submit" class="btn btn-lg wow fadeInUp" data-wow-delay="2.6s">Send your Message</button>
+
+                            </div>
+                            </form>
+                          </div>
+                        </div>
+                  </div>
+          </section>
 {% endblock %}
