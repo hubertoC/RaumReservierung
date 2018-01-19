@@ -15,7 +15,11 @@ class kontaktType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('name', TextType::class, array('label' => 'Name:'))->add('email', TextType::class, array('label' => 'Email:'))->add('content', TextareaType::class, array('label' => 'Message:'));
+        $builder->add('name', TextType::class, array('label' => 'Family name:'))
+        ->add('email', TextType::class, array('label' => 'Email address:'))
+        ->add('phone', TextType::class, array('label' => 'Phone number:'))
+        ->add('subject', TextType::class, array('label' => 'Suject About:'))
+        ->add('content', TextareaType::class, array('label' => 'Your Message there:'));
     }
 
     /**

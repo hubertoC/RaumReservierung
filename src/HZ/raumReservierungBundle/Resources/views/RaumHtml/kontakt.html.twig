@@ -1,62 +1,53 @@
 {% extends 'layoutPublic.html.twig' %}
 
-{% block body %}
+    {% block body %}
 
-  <div class="">
+      <div class="container">
+            {% if app.session.flashbag.has('user-notice') %}
+              <div class="alert alert-success">
+                 {% for msg in app.session.flashbag.get('user-notice') %}
+                  <button type="button" class="close" data-dismiss="alert" name="button">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                  </button>
+                  <a href="/" class="alert-link">{{ msg }}</a>
 
-    <section id="contact">
-      <div class="section-content">
-        {% if app.session.flashbag.has('user-notice') %}
-          <div class="alert alert-success">
-            {% for msg in app.session.flashbag.get('user-notice') %}
-              <button type="button" class="close" data-dismiss="alert" name="button">
+                  {% endfor %}
+              </div>
+            {% endif %}
+            <hr>
+            <br>
+              <div class="form-area">
+                {{form_start(form,{'attr':{'class':'form-group','role':'form'}})}}
+                  <br style="clear:both">
+                  <h3 style="margin-bottom: 10px; text-align: center;" class="alert alert-info wow flip" data-wow-delay="1.6s">Füllen Sie das Formular aus und senden Sie es an uns.
+                  </h3>
+                        <div class="form-group">
+                         {{form_row(form.name,{'attr':{'class':'form-control','placeholder':'Example : Leonel TATIEKAM'}})}}
+                        </div>
 
-                <span aria-hidden="true">&times;
-                </span>
-                <span class="sr-only">Close</span>
-              </button>
-              <a href="/" class="alert-link">{{ msg }}</a>
+                        <div class="form-group">
+                             {{form_row(form.email,{'attr':{'class':'form-control','placeholder':'Example : email@address.domaine'}})}}
+                        </div>
+                        <div class="form-group">
+                             {{form_row(form.phone,{'attr':{'class':'form-control','placeholder':'Example : +237 691 549 169 '}})}}
+                        </div>
+                        <div class="form-group">
+                             {{form_row(form.subject,{'attr':{'class':'form-control','placeholder':'Example : Talk about reservierung '}})}}
+                        </div>
+                          <div class="form-group">
+                              {{form_row(form.content,{'attr':{'class':'form-control','rows':10,'cols':10,'placeholder':'your message there...(500 words) '}})}}
+                          </div>
 
-            {% endfor %}
+                          <button type="submit" class="btn btn-primary btn-lg wow fadeInUp" name="send" style="float:right" data-wow-delay="1.6s">Send your Message</button>
+                    </div>
+                {{ form_end(form) }}
           </div>
-        {% endif %}
-        <h1 class="section-header">Nehmen Sie Kontakt auf
-          <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">
-          </span>
-        </h1>
-        <h3>Mit diesem Formular können Sie uns eine Nachricht zukommen lassen.
-        </h3>
       </div>
-      {{ form_start(form) }}
-      <div class="col-md-6 form-line">
-        <div class="form-group">
-
-          {{ form_row(form.name, {'attr':{'class':'form-control'}})}}
-        </div>
-        <div class="form-group">
-
-          {{ form_row(form.email, {'attr':{'class':'form-control'}})}}
-
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="form-group">
-          {{ form_row(form.content, {'attr':{'class':'form-control'}})}}
-        </div>
-        <div>
-
-          <button class="btn btn-default submit" type="submit">senden<i class="fa fa-paper-plane" aria-hidden="true"></i>
-          </button><br>
-          {{ form_end(form) }}
-        </div>
-      </section>
-
-    </div>
 
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('persocss/categories/style.css') }}" media="screen">
 
-  {% endblock %}
+    {% endblock %}

@@ -31,8 +31,21 @@ class kontakt
     /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=255)
+     * @ORM\Column(name="phone", type="string", length=255)
      */
+     private $phone;
+     /**
+      * @var string
+      *
+      * @ORM\Column(name="subject", type="string", length=255)
+      */
+
+      private $subject;
+      /**
+       * @var string
+       *
+       * @ORM\Column(name="email", type="string", length=255)
+       */
     private $email;
 
     /**
@@ -75,6 +88,55 @@ class kontakt
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set phone
+     *
+     * @param string $phone
+     *
+     * @return kontakt
+     */
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    /**
+     * Get phone
+     *
+     * @return string
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+
+    /**
+     * Set subject
+     *
+     * @param string $subject
+     *
+     * @return kontakt
+     */
+    public function setSubject($subject)
+    {
+        $this->subject = $subject;
+
+        return $this;
+    }
+
+    /**
+     * Get phone
+     *
+     * @return string
+     */
+    public function getSubject()
+    {
+        return $this->subject;
     }
 
     /**
@@ -125,4 +187,3 @@ class kontakt
         return $this->content;
     }
 }
-
